@@ -24,4 +24,33 @@ $text-color: #333;
   background-repeat: no-repeat;
   background-size: cover; // Ensures the image covers the entire container
   background-position: center center;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.titleContainer {
+  height: 400px;
+  width: 370px;
+  margin-left: 60px;
+}
+
+.title {
+  font-size: 65px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+}
+
+.title2 {
+  font-size: 65px;
+  font-weight: 700;
+  color: #A1CDBB;
+  margin: 0;
+}
+
+.titleDescription {
+  color: white;
+  // font-size: 16px;
+  text-align: justify;
 }

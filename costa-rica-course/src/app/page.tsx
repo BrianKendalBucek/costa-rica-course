@@ -7,11 +7,14 @@ const HomePage: React.FC = () => {
       {/* Main content area */}
       <main className={styles.main}>
         <section className={styles.hero}>
-          <h1 className={styles.title}>EXPERIENCE</h1>
-          <h1 className={styles.title2}>EXPAT LIFE</h1>
-          <p className={styles.description}>
+          <div className={styles.titleContainer}>
+            <h1 className={styles.title}>EXPERIENCE</h1>
+            <h1 className={styles.title2}>EXPAT LIFE</h1>
+            <p className={styles.titleDescription}>Has life left you wanting more? Embark on your Expat journey with confidance, and discover and world of opportynity with one stop destination for global living essentials.</p>
+          </div>
+          {/* <p className={styles.description}>
             Your go-to solution for [services, products, or content].
-          </p>
+          </p> */}
         </section>
 
         {/* Content grid or sections */}
