@@ -54,3 +54,15 @@ $text-color: #333;
   // font-size: 16px;
   text-align: justify;
 }
+
+.titleButton {
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255, 0.2); // Set the background color with 70% opacity
+  border: 2px solid white;
+  color: white; // Text color remains fully opaque
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
