@@ -1,0 +1,12 @@
+/* src/app/page.module.scss */
+$text-color: #333;
+
+.container {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.title {
+  color: $text-color;
+  font-size: 2rem;
+}
