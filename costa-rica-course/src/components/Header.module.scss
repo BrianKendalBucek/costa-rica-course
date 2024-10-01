@@ -1,0 +1,44 @@
+/* src/components/Header.module.scss */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-bottom: 2px solid grey;
+  color: black;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  // a {
+  //   // color: black;
+  //   // text-decoration: none;
+  // }
+}
+
+.nav {
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+}
+
+.navList {
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: #0070f3; // Primary color
+    }
+  }
+}
