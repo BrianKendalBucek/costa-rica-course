@@ -12,7 +12,7 @@ const Header: React.FC = () => {
           <Image
             src="/images/Frame 28991.png" // Path to your logo in the public/images directory
             alt="Logo"
-            width={250} // Set appropriate width for the logo
+            width={260} // Set appropriate width for the logo
             height={65} // Set appropriate height for the logo
             priority // Ensures the logo loads faster
           />

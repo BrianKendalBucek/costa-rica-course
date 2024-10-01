@@ -7,7 +7,8 @@ const HomePage: React.FC = () => {
       {/* Main content area */}
       <main className={styles.main}>
         <section className={styles.hero}>
-          <h1 className={styles.title}>Welcome to Our Website</h1>
+          <h1 className={styles.title}>EXPERIENCE</h1>
+          <h1 className={styles.title2}>EXPAT LIFE</h1>
           <p className={styles.description}>
             Your go-to solution for [services, products, or content].
           </p>
