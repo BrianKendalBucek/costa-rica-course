@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
             <p>Let us know your goal and we will tell you how we can help you based on your details</p>
           </div>
           <div className={styles.trio}>
-            <div>
+            <div className={styles.imageWithTextContainer}>
               <Image
                 src="/images/Rectangle 2775 (1).png" // Path to your logo in the public/images directory
                 alt="Login Button"
@@ -34,8 +34,11 @@ const HomePage: React.FC = () => {
                 height={288} // Set appropriate height for the logo
                 priority // Ensures the logo loads faster
               />
+              <div className={styles.overlayText}>
+                Find Your Pura Vida
+              </div>
             </div>
-            <div>
+            <div className={styles.imageWithTextContainer}>
               <Image
                 src="/images/Rectangle 2776 (1).png" // Path to your logo in the public/images directory
                 alt="Login Button"
@@ -43,8 +46,11 @@ const HomePage: React.FC = () => {
                 height={288} // Set appropriate height for the logo
                 priority // Ensures the logo loads faster
               />
+              <div className={styles.overlayText}>
+                Retire in Costa Rica
+              </div>
             </div>
-            <div>
+            <div className={styles.imageWithTextContainer}>
               <Image
                 src="/images/Rectangle 2777 (1).png" // Path to your logo in the public/images directory
                 alt="Login Button"
@@ -52,6 +58,9 @@ const HomePage: React.FC = () => {
                 height={288} // Set appropriate height for the logo
                 priority // Ensures the logo loads faster
               />
+              <div className={styles.overlayText}>
+                Find Your Freedom
+              </div>
             </div>
           </div>
           <div className={styles.card}>
