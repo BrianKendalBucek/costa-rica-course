@@ -162,17 +162,21 @@ $text-color: #333;
       .threeStepsSteps {
         display: flex;
         margin-top: 40px;
+        gap: 60px;
 
         .threeStepsStep {
           display: flex;
+          gap: 30px;
 
           .threeStepNumber {
             font-size: 80px;
             font-weight: 200;
+            text-align: left;
           }
           
           .threeStepDescription {
             width: 255px;
+            text-align: justify;
 
           }
         }
