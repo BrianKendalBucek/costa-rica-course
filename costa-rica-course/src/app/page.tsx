@@ -116,7 +116,7 @@ const HomePage: React.FC = () => {
           </div>
           <div className={styles.card}>
             <h2>MEET THE LEAD INSTRUCTORS</h2>
-            <p>Meet out lead instructors: experts committed to guiding your learning journey with passion and precision.</p>
+            <p className={styles.intro}>Meet out lead instructors: experts committed to guiding your learning journey with passion and precision.</p>
             <div className={styles.instructorsContainer}>
               {instructors.map(instructor => <Instructor key={instructor.alt} instructor={instructor} />)}
             </div>
