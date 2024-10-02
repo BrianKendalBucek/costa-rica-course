@@ -126,9 +126,19 @@ $text-color: #333;
     width: 331.96px;
     height: 431.86px;
     box-shadow: 5.46px 6.55px 23.7px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .instructorImage {
         padding-top: 30.85px;
+    }
+
+    .instructorDiscription {
+      width: 231.5px;
+      text-align: justify;
+      padding-top: 30.85px;
+
     }
   }
 }

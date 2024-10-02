@@ -2,10 +2,85 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './page.module.scss'; // Import page-specific styles
 
+const images = [
+  {
+    src: "/images/Rectangle 2775 (1).png",
+    alt: "Find Your Pura Vida",
+    overlayText: "Find Your Pura Vida"
+  },
+  {
+    src: "/images/Rectangle 2776 (1).png",
+    alt: "Retire in Costa Rica",
+    overlayText: "Retire in Costa Rica"
+  },
+  {
+    src: "/images/Rectangle 2777 (1).png",
+    alt: "Find Your Freedom",
+    overlayText: "Find Your Freedom"
+  }
+];
+
+const ImageWithText = ({ image }) => (
+  <div className={styles.imageWithTextContainer}>
+    <Image
+      src={image.src}
+      alt={image.alt}
+      width={405.67}
+      height={288}
+      priority
+    />
+    <div className={styles.overlayText}>
+      {image.overlayText}
+    </div>
+  </div>
+);
+
+const instructors = [
+  {
+    src: "/images/Ellipse 10.png",
+    alt: "Mrs. Jane Doe",
+    name: "Mrs. Jane Doe",
+    title: "INSTRUCTOR SPOTLIGHT",
+    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque."
+  },
+  {
+    src: "/images/Ellipse 10 (1).png",
+    alt: "Mr. John Doe",
+    name: "Mr. John Doe",
+    title: "INSTRUCTOR SPOTLIGHT",
+    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque."
+  },
+  {
+    src: "/images/Ellipse 10 (2).png",
+    alt: "Mrs. Janis Doe",
+    name: "Mrs. Janis Doe",
+    title: "INSTRUCTOR SPOTLIGHT",
+    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque."
+  }
+];
+
+const Instructor = ({ instructor }) => (
+  <div className={styles.instructor}>
+    <Image
+      src={instructor.src}
+      alt={instructor.alt}
+      width={128.85}
+      height={128.85}
+      priority
+      className={styles.instructorImage}
+    />
+    <div>
+      <h3>{instructor.name}</h3>
+      <h4>{instructor.title}</h4>
+    </div>
+    <p className={styles.instructorDiscription}>{instructor.discription}</p>
+  </div>
+);
+
+
 const HomePage: React.FC = () => {
   return (
     <>
-      {/* Main content area */}
       <main className={styles.main}>
         <section className={styles.hero}>
           <div className={styles.titleContainer}>
@@ -14,89 +89,21 @@ const HomePage: React.FC = () => {
             <p className={styles.titleDescription}>Has life left you wanting more? Embark on your Expat journey with confidance, and discover and world of opportynity with one stop destination for global living essentials.</p>
             <button className={styles.titleButton}>BEGIN THE ADVENTURE &gt;</button>
           </div>
-          {/* <p className={styles.description}>
-            Your go-to solution for [services, products, or content].
-          </p> */}
         </section>
 
-        {/* Content grid or sections */}
         <section className={styles.contentGrid}>
           <div className={styles.card}>
             <h2>WHAT IS YOUR GOAL?</h2>
             <p>Let us know your goal and we will tell you how we can help you based on your details</p>
           </div>
           <div className={styles.trio}>
-            <div className={styles.imageWithTextContainer}>
-              <Image
-                src="/images/Rectangle 2775 (1).png" // Path to your logo in the public/images directory
-                alt="Login Button"
-                width={405.67} // Set appropriate width for the logo
-                height={288} // Set appropriate height for the logo
-                priority // Ensures the logo loads faster
-              />
-              <div className={styles.overlayText}>
-                Find Your Pura Vida
-              </div>
-            </div>
-            <div className={styles.imageWithTextContainer}>
-              <Image
-                src="/images/Rectangle 2776 (1).png" // Path to your logo in the public/images directory
-                alt="Login Button"
-                width={405.67} // Set appropriate width for the logo
-                height={288} // Set appropriate height for the logo
-                priority // Ensures the logo loads faster
-              />
-              <div className={styles.overlayText}>
-                Retire in Costa Rica
-              </div>
-            </div>
-            <div className={styles.imageWithTextContainer}>
-              <Image
-                src="/images/Rectangle 2777 (1).png" // Path to your logo in the public/images directory
-                alt="Login Button"
-                width={405.67} // Set appropriate width for the logo
-                height={288} // Set appropriate height for the logo
-                priority // Ensures the logo loads faster
-              />
-              <div className={styles.overlayText}>
-                Find Your Freedom
-              </div>
-            </div>
+            {images.map(image => <ImageWithText key={image.alt} image={image} />)}
           </div>
           <div className={styles.card}>
             <h2>MEET THE LEAD INSTRUCTORS</h2>
             <p>Meet out lead instructors: experts committed to guiding your learning journey with passion and precision.</p>
             <div className={styles.instructorsContainer}>
-              <div className={styles.instructor}>
-                <Image
-                  src="/images/Ellipse 10.png" // Path to your logo in the public/images directory
-                  alt="Login Button"
-                  width={128.85} // Set appropriate width for the logo
-                  height={128.85} // Set appropriate height for the logo
-                  priority // Ensures the logo loads faster
-                  className={styles.instructorImage}
-                />
-              </div>
-              <div className={styles.instructor}>
-                <Image
-                  src="/images/Ellipse 10 (1).png" // Path to your logo in the public/images directory
-                  alt="Login Button"
-                  width={128.85} // Set appropriate width for the logo
-                  height={128.85} // Set appropriate height for the logo
-                  priority // Ensures the logo loads faster
-                  className={styles.instructorImage}
-                />
-              </div>
-              <div className={styles.instructor}>
-                <Image
-                  src="/images/Ellipse 10 (2).png" // Path to your logo in the public/images directory
-                  alt="Login Button"
-                  width={128.85} // Set appropriate width for the logo
-                  height={128.85} // Set appropriate height for the logo
-                  priority // Ensures the logo loads faster
-                  className={styles.instructorImage}
-                />
-              </div>
+              {instructors.map(instructor => <Instructor key={instructor.alt} instructor={instructor} />)}
             </div>
           </div>
           <div className={styles.card}>
