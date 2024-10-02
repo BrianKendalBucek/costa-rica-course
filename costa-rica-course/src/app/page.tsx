@@ -4,7 +4,7 @@ import styles from './page.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { faFacebook, faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { images, instructors } from '@/constants/constants';
+import { images, instructors, steps } from '@/constants/constants';
 import ImageWithText from '@/components/ImageWithText';
 // import { Instructor } from '@/components/Instructor';
 
@@ -37,6 +37,18 @@ const Instructor = ({ instructor }) => (
   </div>
 );
 
+const ThreeSteps = () => {
+  return (
+    <div className={styles.threeStepsSteps}>
+      {steps.map((step, index) => (
+        <div key={index} className={styles.threeStepsStep}>
+          <div className={styles.threeStepNumber}>{step.number}</div>
+          <div className={styles.threeStepDescription}>{step.details}</div>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 const HomePage: React.FC = () => {
   return (
@@ -85,20 +97,7 @@ const HomePage: React.FC = () => {
               <h2>MORE FREEDOM</h2>
             </div>
             <h3 className={styles.threeStepsExtension}>IN 3 SIMPLE STEPS:</h3>
-            <div className={styles.threeStepsSteps}>
-              <div className={styles.threeStepsStep}>
-                <div className={styles.threeStepNumber}>1.</div>
-                <div className={styles.threeStepDescription}>Move your business and your money offshore to reduce taxes and grow your business faster. This includes tax planning and offshore banking, companies, and merchant accounts.</div>
-              </div>
-              <div className={styles.threeStepsStep}>
-                <div className={styles.threeStepNumber}>2.</div>
-                <div className={styles.threeStepDescription}>Move your business and your money offshore to reduce taxes and grow your business faster. This includes tax planning and offshore banking, companies, and merchant accounts.</div>
-              </div>
-              <div className={styles.threeStepsStep}>
-                <div className={styles.threeStepNumber}>3.</div>
-                <div className={styles.threeStepDescription}>Move your business and your money offshore to reduce taxes and grow your business faster. This includes tax planning and offshore banking, companies, and merchant accounts.</div>
-              </div>
-            </div>
+            <ThreeSteps />
           </div>
 
           <div className={styles.card}>

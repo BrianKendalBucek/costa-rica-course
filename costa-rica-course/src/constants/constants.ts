@@ -39,3 +39,18 @@ export const instructors = [
     discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque."
   }
 ];
+
+export const steps = [
+  {
+    number: "1.",
+    details: "Move your business and your money offshore to reduce taxes and grow your business faster. This includes tax planning and offshore banking, companies, and merchant accounts."
+  },
+  {
+    number: "2.",
+    details: "Move your business and your money offshore to reduce taxes and grow your business faster. This includes tax planning and offshore banking, companies, and merchant accounts."
+  },
+  {
+    number: "3.",
+    details: "Move your business and your money offshore to reduce taxes and grow your business faster. This includes tax planning and offshore banking, companies, and merchant accounts."
+  }
+]
