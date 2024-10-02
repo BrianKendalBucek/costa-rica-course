@@ -6,7 +6,10 @@ import styles from './Footer.module.scss';
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
-      <h1>Test</h1>
+      <h1>Join our happy students today!</h1>
+      <p>Begin your journey to a new life in Costa Rica</p>
+      <button>Begin The Adventure</button>
+      <p className={styles.copyright}>Copyright ® 2024 The Costa Rica Course</p>
     </footer>
   );
 };
