@@ -158,7 +158,7 @@ const HomePage: React.FC = () => {
 
           <div className={styles.card}>
             <h2>MAIN COURSE</h2>
-            <p>Embark on a comprehensive foundational course designed to guide you through every aspect of becomming an expat in Costa Rica, covering legal requirements, cultural acclimatization, language proficiency, and practical tips for a successful relocation.</p>
+            <p className={styles.cardMainCourse}>Embark on a comprehensive foundational course designed to guide you through every aspect of becomming an expat in Costa Rica, covering legal requirements, cultural acclimatization, language proficiency, and practical tips for a successful relocation.</p>
           </div>
 
           <div className={styles.card}>
