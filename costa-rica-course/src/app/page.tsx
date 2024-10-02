@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './page.module.scss'; // Import page-specific styles
 
 const HomePage: React.FC = () => {
@@ -21,16 +22,48 @@ const HomePage: React.FC = () => {
         {/* Content grid or sections */}
         <section className={styles.contentGrid}>
           <div className={styles.card}>
-            <h2>About Us</h2>
-            <p>Find out more about our mission, vision, and values.</p>
+            <h2>WHAT IS YOUR GOAL?</h2>
+            <p>Let us know your goal and we will tell you how we can help you based on your details</p>
+          </div>
+          <div className={styles.trio}>
+            <div>
+              <Image
+                src="/images/Rectangle 2775 (1).png" // Path to your logo in the public/images directory
+                alt="Login Button"
+                width={405.67} // Set appropriate width for the logo
+                height={288} // Set appropriate height for the logo
+                priority // Ensures the logo loads faster
+              />
+            </div>
+            <div>
+              <Image
+                src="/images/Rectangle 2776 (1).png" // Path to your logo in the public/images directory
+                alt="Login Button"
+                width={405.67} // Set appropriate width for the logo
+                height={288} // Set appropriate height for the logo
+                priority // Ensures the logo loads faster
+              />
+            </div>
+            <div>
+              <Image
+                src="/images/Rectangle 2777 (1).png" // Path to your logo in the public/images directory
+                alt="Login Button"
+                width={405.67} // Set appropriate width for the logo
+                height={288} // Set appropriate height for the logo
+                priority // Ensures the logo loads faster
+              />
+            </div>
           </div>
           <div className={styles.card}>
-            <h2>Our Services</h2>
-            <p>Explore the wide range of services we offer to our clients.</p>
+            <h2>MEET THE LEAD INSTRUCTORS</h2>
+            <p>Meet out lead instructors: experts committed to guiding your learning journey with passion and precision.</p>
           </div>
           <div className={styles.card}>
-            <h2>Get In Touch</h2>
-            <p>Contact us to learn more or to start working with us today.</p>
+            <h2>MAIN COURSE</h2>
+            <p>Embark on a comprehensive foundational course designed to guide you through every aspect of becomming an expat in Costa Rica, covering legal requirements, cultural acclimatization, language proficiency, and practical tips for a successful relocation.</p>
+          </div>
+          <div className={styles.card}>
+            <h2>WHAT OUR STUDENTS HAVE TO SAY</h2>
           </div>
         </section>
       </main>

@@ -66,3 +66,26 @@ $text-color: #333;
   cursor: pointer;
   margin-top: 20px;
 }
+
+.contentGrid {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 415px;
+  text-align: center;
+}
+
+.trio {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
