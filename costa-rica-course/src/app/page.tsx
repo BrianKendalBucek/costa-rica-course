@@ -1,6 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from './page.module.scss'; // Import page-specific styles
+import styles from './page.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { faFacebook, faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 const images = [
   {
@@ -74,6 +78,17 @@ const Instructor = ({ instructor }) => (
       <h4>{instructor.title}</h4>
     </div>
     <p className={styles.instructorDiscription}>{instructor.discription}</p>
+    <div className={styles.socialLinksContainer}>
+      {/* <a href={instructor.socials.facebook} className={styles.socialIcon}> */}
+      <FontAwesomeIcon icon={faFacebook} className={styles.facebook}/>
+      {/* </a> */}
+      {/* <a href={instructor.socials.twitter} className={styles.socialIcon}> */}
+      <FontAwesomeIcon icon={faXTwitter} className={styles.xtwitter}/>
+      {/* </a> */}
+      {/* <a href={instructor.socials.linkedin} className={styles.socialIcon}> */}
+      <FontAwesomeIcon icon={faLinkedin} className={styles.linkedin}/>
+      {/* </a> */}
+    </div>
   </div>
 );
 
