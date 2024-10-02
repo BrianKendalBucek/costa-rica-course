@@ -1,110 +1,197 @@
-/* src/app/page.module.scss */
 $text-color: #333;
 
-// .container {
-//   padding: 20px;
-//   background-color: #f4f4f4;
-// }
+.main {
 
-// .title {
-//   color: $text-color;
-//   font-size: 2rem;
-// }
-
-// .hero {
-//   background-color: red;
-// }
-
-.hero {
-  padding: 2rem;
-  height: 746px;
-  width: auto;
-  // min-height: 100vh; // Ensures the background covers the entire viewport height
-  background-image: url('/images/Rectangle 10 (7).png'); // Path to the background image in public folder
-  background-repeat: no-repeat;
-  background-size: cover; // Ensures the image covers the entire container
-  background-position: center center;
-  display: flex;
-  // justify-content: center;
-  align-items: center;
-}
-
-.titleContainer {
-  height: 400px;
-  width: 370px;
-  margin-left: 60px;
-}
-
-.title {
-  font-size: 65px;
-  font-weight: 400;
-  color: white;
-  margin: 0;
-}
-
-.title2 {
-  font-size: 65px;
-  font-weight: 700;
-  color: #A1CDBB;
-  margin: 0;
-}
-
-.titleDescription {
-  color: white;
-  // font-size: 16px;
-  text-align: justify;
-}
-
-.titleButton {
-  border-radius: 20px;
-  font-size: 20px;
-  font-weight: 600;
-  background-color: rgb(255, 255, 255, 0.2); // Set the background color with 70% opacity
-  border: 2px solid white;
-  color: white; // Text color remains fully opaque
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.contentGrid {
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  align-items: center;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 415px;
-  text-align: center;
-  margin-top: 50px;
-
-  .intro {
-    width: 456px;
+  .hero {
+    padding: 2rem;
+    height: 746px;
+    width: auto;
+    // min-height: 100vh; // Ensures the background covers the entire viewport height
+    background-image: url('/images/Rectangle 10 (7).png'); // Path to the background image in public folder
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+  
+    .titleContainer {
+      height: 400px;
+      width: 370px;
+      margin-left: 60px;
+    }
+  
+    .title {
+      font-size: 65px;
+      font-weight: 400;
+      color: white;
+      margin: 0;
+    }
+  
+    .title2 {
+      font-size: 65px;
+      font-weight: 700;
+      color: #A1CDBB;
+      margin: 0;
+    }
+  
+    .titleDescription {
+      color: white;
+      text-align: justify;
+    }
+  
+    .titleButton {
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      background-color: rgb(255, 255, 255, 0.2); // Set the background color with 70% opacity
+      border: 2px solid white;
+      color: white; // Text color remains fully opaque
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
   }
-}
+  
+  .contentGrid {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+  
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 415px;
+      text-align: center;
+      margin-top: 50px;
+    
+      .intro {
+        width: 456px;
+      }
+  
+      .instructorsContainer {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 30px;
+      
+        .instructor {
+          // border: 1px solid black;
+          border-radius: 4.37px;
+          width: 331.96px;
+          height: 431.86px;
+          box-shadow: 5.46px 6.55px 23.7px 0 rgba(0, 0, 0, 0.15);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      
+          .instructorImage {
+              padding-top: 30.85px;
+          }
+      
+          .instructorDiscription {
+            width: 231.5px;
+            text-align: justify;
+            padding-top: 30.85px;
+      
+          }
+      
+          .socialLinksContainer {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+          }
 
-.trio {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 50px;
+          .facebook {
+            font-size: 20px;
+            color: #3B5998;
+          }
+
+          .xtwitter {
+            font-size: 20px;
+          }
+
+          .linkedin {
+            font-size: 20px;
+            color: #0077B5;
+          }
+        }
+      }
+    }
+  
+    .trio {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .threeSteps {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url('/images/Rectangle 2773 (2).png');
+      height: 463px;
+      width: 100vw;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      margin-top: 100px;
+      color: white;
+
+      .threeStepsTitle {
+        display: flex;
+        gap: 5px;
+
+        h2 {
+          margin: 0;
+          font-size: 46px;
+        }
+
+        .plus {
+          color: orange;
+        }
+
+      }
+      
+      .threeStepsSteps {
+        display: flex;
+        margin-top: 40px;
+
+        .threeStepsStep {
+          display: flex;
+
+          .threeStepNumber {
+            font-size: 80px;
+            font-weight: 200;
+          }
+          
+          .threeStepDescription {
+            width: 255px;
+
+          }
+        }
+      }
+
+      .threeStepsExtension {
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+        font-weight: 500;
+      }
+    }
+  }
 }
 
 .imageWithTextContainer {
   position: relative;
-  width: 405.67px; // Adjust as needed
-  height: 288px; // Adjust as needed
-
-  // .img {
-  //   display: block;
-  //   width: 100%;
-  //   height: auto;
-  // }
+  width: 405.67px;
+  height: 288px;
 
   .overlayText {
     position: absolute;
@@ -115,52 +202,5 @@ $text-color: #333;
     font-size: 24px;
     font-weight: 500;
     text-align: center;
-  }
-}
-
-.instructorsContainer {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 30px;
-
-  .instructor {
-    // border: 1px solid black;
-    border-radius: 4.37px;
-    width: 331.96px;
-    height: 431.86px;
-    box-shadow: 5.46px 6.55px 23.7px 0 rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .instructorImage {
-        padding-top: 30.85px;
-    }
-
-    .instructorDiscription {
-      width: 231.5px;
-      text-align: justify;
-      padding-top: 30.85px;
-
-    }
-
-    .socialLinksContainer {
-      display: flex;
-      gap: 10px;
-      margin-top: 20px;
-    }
-    .facebook {
-      font-size: 20px;
-      color: #3B5998;
-    }
-    .xtwitter {
-      font-size: 20px;
-    }
-    .linkedin {
-      font-size: 20px;
-      color: #0077B5;
-    }
   }
 }
