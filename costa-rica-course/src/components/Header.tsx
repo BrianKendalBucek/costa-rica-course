@@ -8,42 +8,44 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <div className={styles.logo}>
         <Link href="/">
-          {/* Add the logo using the Image component */}
           <Image
-            src="/images/Frame 28991.png" // Path to your logo in the public/images directory
+            src="/images/Frame 28991.png"
             alt="Logo"
-            width={260} // Set appropriate width for the logo
-            height={65} // Set appropriate height for the logo
-            priority // Ensures the logo loads faster
+            width={260}
+            height={65}
+            priority
           />
         </Link>
       </div>
-      <nav className={styles.nav}>
-        <ul className={styles.navList}>
-          <li className={styles.navItem}>
-            <Link href="/">Home</Link> {/* Remove the <a> tag */}
+      <nav>
+        <ul>
+          <li>
+            <Link href="/">Home</Link>
           </li>
-          <li className={styles.navItem}>
-            <Link href="/about">About</Link> {/* Remove the <a> tag */}
+          <li>
+            <Link href="/about">About</Link>
           </li>
-          <li className={styles.navItem}>
-            <Link href="/services">Services</Link> {/* Remove the <a> tag */}
+          <li>
+            <Link href="/services">Services</Link>
           </li>
-          <li className={styles.navItem}>
-            <Link href="/contact">Contact</Link> {/* Remove the <a> tag */}
+          <li>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
+      
       <div className={styles.loginButton}>
         <Link href="/login">
-          {/* Add the logo using the Image component */}
-          <Image
-            src="/images/Frame 28994.png" // Path to your logo in the public/images directory
-            alt="Login Button"
-            width={150} // Set appropriate width for the logo
-            height={65} // Set appropriate height for the logo
-            priority // Ensures the logo loads faster
-          />
+          <button>
+            <Image
+              src="/images/Frame 1000005402.png"
+              alt="Login Button"
+              width={20}
+              height={20}
+              priority
+            />
+            Log In
+          </button>
         </Link>
       </div>
 
