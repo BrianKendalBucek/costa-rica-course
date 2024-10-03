@@ -40,9 +40,6 @@ const ContactPage: React.FC = () => {
       />
       <section className={styles.contactForm}>
         <h2>SEND US A MESSAGE</h2>
-        {/* <p>
-          We&apos;d love to hear from you. Fill out the form below to get in touch!
-        </p> */}
         <form onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
             <label htmlFor="name">Full name</label>
@@ -96,44 +93,6 @@ const ContactPage: React.FC = () => {
           </button>
         </form>
       </section>
-
-      {/* <section className={styles.socialMedia}>
-        <h2>Follow Us</h2>
-        <div className={styles.socialIcons}>
-          <a
-            href="https://facebook.com"
-            aria-label="Facebook"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faFacebook} className={styles.facebook} />
-          </a>
-          <a
-            href="https://twitter.com"
-            aria-label="Twitter"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faXTwitter} className={styles.xtwitter} />
-          </a>
-          <a
-            href="https://linkedin.com"
-            aria-label="LinkedIn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedin} className={styles.linkedin} />
-          </a>
-          <a
-            href="https://instagram.com"
-            aria-label="Instagram"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faInstagram} className={styles.instagram} />
-          </a>
-        </div>
-      </section> */}
     </main>
   );
 };
