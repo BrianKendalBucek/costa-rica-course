@@ -68,4 +68,4 @@ export const steps = [
     number: "3.",
     details: "Move your business and your money offshore to reduce taxes and grow your business faster. This includes tax planning and offshore banking, companies, and merchant accounts."
   }
-]
+];
