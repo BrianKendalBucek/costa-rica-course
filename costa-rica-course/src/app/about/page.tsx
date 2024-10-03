@@ -2,6 +2,7 @@ import "./about.module.scss";
 
 import React from "react";
 import styles from "./about.module.scss";
+import { Instructor } from "@/components/Instructor";
 
 const AboutPage = () => {
   return (
@@ -39,6 +40,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      {/* make seperate component */}
       <div className={styles.statBarContainer}>
         <div className={styles.statBarSection}>
           <h2>10+</h2>
@@ -57,6 +59,8 @@ const AboutPage = () => {
           <p>Students</p>
         </div>
       </div>
+
+      <Instructor />
     </div>
   );
 };

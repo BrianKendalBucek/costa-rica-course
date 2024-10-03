@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./page.module.scss";
-import "@fortawesome/fontawesome-svg-core/styles.css";
 import { images } from "@/constants/constants";
 import ImageWithText from "@/components/ImageWithText";
 import { Instructor } from "@/components/Instructor";
@@ -39,15 +38,7 @@ const HomePage: React.FC = () => {
               <ImageWithText key={image.alt} image={image} />
             ))}
           </div>
-
-          <div className={styles.card}>
-            <h2>MEET THE LEAD INSTRUCTORS</h2>
-            <p className={styles.intro}>
-              Meet out lead instructors: experts committed to guiding your
-              learning journey with passion and precision.
-            </p>
-            <Instructor />
-          </div>
+          <Instructor />
           <ThreeSteps />
           <div className={styles.card}>
             <h2>MAIN COURSE</h2>
