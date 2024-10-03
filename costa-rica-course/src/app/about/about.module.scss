@@ -77,7 +77,6 @@
             flex-direction: column;
             justify-content: flex-end;
             padding-bottom: 10px;
-            // padding-right: 10px;
 
             h4 {
               color: black;
@@ -99,7 +98,6 @@
           
           .imageBottomLeft {
             width: 50%;
-            // padding-left: 10px;
             
             h4 {
               color: black;
@@ -121,6 +119,31 @@
         }
       }
     }
-    
+  }
+
+  .statBarContainer {
+    height: 237px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+
+    .statBarSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        font-size: 80px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      p {
+
+      }
+    }
   }
 }
