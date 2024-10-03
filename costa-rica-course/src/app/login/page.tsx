@@ -30,10 +30,10 @@ const LoginPage = () => {
       </div>
       <div className={styles.loginFormContainer}>
         <Image
-          src="/images/Frame 28991.png"
+          src="/images/LoginLogo.png"
           alt="Logo"
-          width={260}
-          height={65}
+          width={201}
+          height={124.73}
           priority
         />
         <div className={styles.loginForm}>
@@ -62,7 +62,7 @@ const LoginPage = () => {
                 placeholder=""
               />
             </div>
-            <button type="submit" className={styles.submitButton}>
+            <button type="submit">
               Log In
             </button>
           </form>

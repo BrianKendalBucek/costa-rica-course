@@ -1,5 +1,6 @@
 .loginPage {
   display: flex;
+
   .leftHero {
     background-image: url("/images/LoginHero.png");
     background-repeat: no-repeat;
@@ -11,11 +12,13 @@
     flex-direction: column;
     justify-content: flex-end;
 
+
     .topHeader {
       margin: 0;
       font-size: 38.37px;
       font-weight: 400;
       color: white;
+      margin-left: 40px;
     }
 
     .bottomHeader {
@@ -23,8 +26,56 @@
       font-size: 38.37px;
       font-weight: 700;
       color: #A1CDBB;
+      margin-left: 40px;
+      margin-bottom: 40px;
     }
   }
 
-  .loginFormContainer {}
+  .loginFormContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+
+    .loginForm {
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .formGroup {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+
+          label {
+            font-size: 11px;
+            font-weight: 400;
+            margin-left: 20px;
+          }
+
+          input {
+            width: 360px;
+            height: 48px;
+          }
+
+        }
+
+        button {
+          width: 366px;
+          height: 40px;
+          background-color: orange;
+          border-radius: 6px;
+          border: none;
+          font-size: 15px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }
