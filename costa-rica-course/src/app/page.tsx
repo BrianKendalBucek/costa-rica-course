@@ -1,41 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
 import styles from './page.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import { faFacebook, faXTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { images, instructors, steps } from '@/constants/constants';
+import { images, steps } from '@/constants/constants';
 import ImageWithText from '@/components/ImageWithText';
-// import { Instructor } from '@/components/Instructor';
-
-const Instructor = ({ instructor }) => (
-  <div className={styles.instructor}>
-    <Image
-      src={instructor.src}
-      alt={instructor.alt}
-      width={128.85}
-      height={128.85}
-      priority
-      className={styles.instructorImage}
-    />
-    <div>
-      <h3>{instructor.name}</h3>
-      <h4>{instructor.title}</h4>
-    </div>
-    <p className={styles.instructorDiscription}>{instructor.discription}</p>
-    <div className={styles.socialLinksContainer}>
-      {/* <a href={instructor.socials.facebook} className={styles.socialIcon}> */}
-      <FontAwesomeIcon icon={faFacebook} className={styles.facebook}/>
-      {/* </a> */}
-      {/* <a href={instructor.socials.twitter} className={styles.socialIcon}> */}
-      <FontAwesomeIcon icon={faXTwitter} className={styles.xtwitter}/>
-      {/* </a> */}
-      {/* <a href={instructor.socials.linkedin} className={styles.socialIcon}> */}
-      <FontAwesomeIcon icon={faLinkedin} className={styles.linkedin}/>
-      {/* </a> */}
-    </div>
-  </div>
-);
+import { Instructor } from '@/components/Instructor';
 
 const ThreeSteps = () => {
   return (
@@ -80,9 +48,7 @@ const HomePage: React.FC = () => {
           <div className={styles.card}>
             <h2>MEET THE LEAD INSTRUCTORS</h2>
             <p className={styles.intro}>Meet out lead instructors: experts committed to guiding your learning journey with passion and precision.</p>
-            <div className={styles.instructorsContainer}>
-              {instructors.map(instructor => <Instructor key={instructor.alt} instructor={instructor} />)}
-            </div>
+            <Instructor />
           </div>
 
           <div className={styles.threeSteps}>

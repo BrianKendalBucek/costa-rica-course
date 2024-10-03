@@ -18,26 +18,41 @@ export const images = [
 
 export const instructors = [
   {
-    src: "/images/Ellipse 10.png",
-    alt: "Mrs. Jane Doe",
-    name: "Mrs. Jane Doe",
-    title: "INSTRUCTOR SPOTLIGHT",
-    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque."
+    name: 'Mrs. Jane Doe',
+    title: 'INSTRUCTOR SPOTLIGHT',
+    alt: 'Jane Doe',
+    src: '/images/Ellipse 10.png',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque.',
+    socials: {
+      facebook: 'https://facebook.com/janedoe',
+      twitter: 'https://twitter.com/janedoe',
+      linkedin: 'https://linkedin.com/in/janedoe',
+    },
   },
   {
-    src: "/images/Ellipse 10 (1).png",
-    alt: "Mr. John Doe",
-    name: "Mr. John Doe",
-    title: "INSTRUCTOR SPOTLIGHT",
-    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque."
+    name: 'Mr. John Doe',
+    title: 'INSTRUCTOR SPOTLIGHT',
+    alt: 'John Doe',
+    src: '/images/Ellipse 10 (1).png',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque.',
+    socials: {
+      facebook: 'https://facebook.com/johndoe',
+      twitter: 'https://twitter.com/johndoe',
+      linkedin: 'https://linkedin.com/in/johndoe',
+    },
   },
   {
-    src: "/images/Ellipse 10 (2).png",
-    alt: "Mrs. Janis Doe",
-    name: "Mrs. Janis Doe",
-    title: "INSTRUCTOR SPOTLIGHT",
-    discription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque."
-  }
+    name: 'Mrs. Janis Doe',
+    title: 'INSTRUCTOR SPOTLIGHT',
+    alt: 'Janis Doe',
+    src: '/images/Ellipse 10 (2).png',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque.',
+    socials: {
+      facebook: 'https://facebook.com/janisdoe',
+      twitter: 'https://twitter.com/janisdoe',
+      linkedin: 'https://linkedin.com/in/janisdoe',
+    },
+  },
 ];
 
 export const steps = [
