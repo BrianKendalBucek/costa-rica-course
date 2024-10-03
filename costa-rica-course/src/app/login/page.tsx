@@ -62,9 +62,11 @@ const LoginPage = () => {
                 placeholder=""
               />
             </div>
-            <button type="submit">
-              Log In
-            </button>
+            <div className={styles.rememberForgotContainer}>
+              <div className={styles.remember}></div>
+              <div className={styles.forgot}></div>
+            </div>
+            <button type="submit">Log In</button>
           </form>
         </div>
       </div>
