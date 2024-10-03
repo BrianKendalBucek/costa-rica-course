@@ -35,12 +35,12 @@ const ContactPage: React.FC = () => {
       <Hero
         titleOne="NEED"
         titleTwo="HELP?"
-        description="Find the support and answers you're looking for our dedicated team is hereto assist you every step of the way."
+        description="Find the support and answers you're looking for our dedicated team is here to assist you every step of the way."
       />
       <section className={styles.contactForm}>
-        <h1>Contact Us</h1>
+        <h2>SEND US A MESSAGE</h2>
         <p>
-          We'd love to hear from you. Fill out the form below to get in touch!
+          We&apos;d love to hear from you. Fill out the form below to get in touch!
         </p>
         <form onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
@@ -93,7 +93,7 @@ const ContactPage: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faFacebookF} className={styles.icon} />
+            <FontAwesomeIcon icon={faFacebookF} className={styles.facebook} />
           </a>
           <a
             href="https://twitter.com"
@@ -101,7 +101,7 @@ const ContactPage: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faTwitter} className={styles.icon} />
+            <FontAwesomeIcon icon={faTwitter} className={styles.xtwitter} />
           </a>
           <a
             href="https://linkedin.com"
@@ -109,7 +109,7 @@ const ContactPage: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faLinkedinIn} className={styles.icon} />
+            <FontAwesomeIcon icon={faLinkedinIn} className={styles.linkedin} />
           </a>
           <a
             href="https://instagram.com"
