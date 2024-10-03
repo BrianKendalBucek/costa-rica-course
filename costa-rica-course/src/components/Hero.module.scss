@@ -1,10 +1,8 @@
 .hero {
   border: 1px solid black;
   height: 343px;
-  // background-image: url('/images/Office.png');
   background-repeat: no-repeat;
   background-size: cover;
-  // background-position: bottom center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +21,7 @@
     .heroTitleTwo {
       font-size: 64px;
       font-weight: 700;
-      color: #A1CDBB;
+      color: #a1cdbb;
     }
   }
 

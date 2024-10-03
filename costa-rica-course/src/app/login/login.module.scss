@@ -1,0 +1,30 @@
+.loginPage {
+  display: flex;
+  .leftHero {
+    background-image: url("/images/LoginHero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 883px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .topHeader {
+      margin: 0;
+      font-size: 38.37px;
+      font-weight: 400;
+      color: white;
+    }
+
+    .bottomHeader {
+      margin: 0;
+      font-size: 38.37px;
+      font-weight: 700;
+      color: #A1CDBB;
+    }
+  }
+
+  .loginFormContainer {}
+}
