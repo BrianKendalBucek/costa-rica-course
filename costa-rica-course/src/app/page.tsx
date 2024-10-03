@@ -4,6 +4,7 @@ import { images } from "@/constants/constants";
 import ImageWithText from "@/components/ImageWithText";
 import { Instructor } from "@/components/Instructor";
 import { ThreeSteps } from "@/components/ThreeSteps";
+import { Students } from "@/components/Students";
 
 const HomePage: React.FC = () => {
   return (
@@ -49,10 +50,7 @@ const HomePage: React.FC = () => {
               proficiency, and practical tips for a successful relocation.
             </p>
           </div>
-
-          <div className={styles.card}>
-            <h2>WHAT OUR STUDENTS HAVE TO SAY</h2>
-          </div>
+          <Students />
         </section>
       </main>
     </>

@@ -3,6 +3,7 @@ import "./about.module.scss";
 import React from "react";
 import styles from "./about.module.scss";
 import { Instructor } from "@/components/Instructor";
+import { Students } from "@/components/Students";
 
 const AboutPage = () => {
   return (
@@ -61,6 +62,7 @@ const AboutPage = () => {
       </div>
 
       <Instructor />
+      <Students />
     </div>
   );
 };
