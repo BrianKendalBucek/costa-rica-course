@@ -1,37 +1,95 @@
-.hero {
-  border: 1px solid black;
-  height: 343px;
-  background-image: url('/images/Office.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.aboutContainer {
 
-  .heroTitle {
+  .hero {
+    border: 1px solid black;
+    height: 343px;
+    background-image: url('/images/Office.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
     display: flex;
-    gap: 15px;
-
-    .heroTitleOne {
-      font-size: 64px;
-      font-weight: 400;
-      color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    .heroTitle {
+      display: flex;
+      gap: 15px;
+  
+      .heroTitleOne {
+        font-size: 64px;
+        font-weight: 400;
+        color: white;
+      }
+  
+      .heroTitleTwo {
+        font-size: 64px;
+        font-weight: 700;
+        color: #A1CDBB;
+      }
     }
-
-    .heroTitleTwo {
-      font-size: 64px;
-      font-weight: 700;
-      color: #A1CDBB;
+  
+    p {
+      width: 551px;
+      color: white;
+      font-weight: 500;
+      text-align: center;
+      line-height: 19.36px;
     }
   }
 
-  p {
-    width: 551px;
-    color: white;
-    font-weight: 500;
-    text-align: center;
-    line-height: 19.36px;
+  .storyContainer {
+    
+    .storyAndImageContainer {
+      height: 513px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 100px 0;
+      gap: 80px;
+
+      .story {
+        width: 463px;
+        height: 478px;
+        // background-color: red;
+      }
+  
+      .images {
+        width: 463px;
+        height: 478px;
+        
+        .imageTop {
+          height: 50%;
+          display: flex;
+          
+          .imageTopLeft {
+            // background-color: green;
+            background-image: url('/images/lisa-green.png');
+            width: 50%
+          }
+          
+          .imageTopRight {
+            background-color: pink;
+            width: 50%;
+          }
+        }
+        
+        .imageBottom {
+          height: 50%;
+          display: flex;
+          
+          .imageBottomLeft {
+            background-color: red;
+            width: 50%;
+          }
+          
+          .imageBottomRight {
+            background-image: url('/images/dr-john-smith.png');
+            width: 50%;
+          }
+        }
+      }
+    }
+    
   }
 }
