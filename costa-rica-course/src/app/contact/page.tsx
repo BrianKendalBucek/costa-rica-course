@@ -1,14 +1,7 @@
 "use client";
 
 import React, { useState, FormEvent } from "react";
-import styles from "./contact.module.scss"; // Import the SCSS module for styling
-// import {
-//   faFacebook,
-//   faXTwitter,
-//   faLinkedin,
-//   faInstagram,
-// } from "@fortawesome/free-brands-svg-icons"; // Import social media icons
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesome component
+import styles from "./contact.module.scss";
 import { Hero } from "@/components/Hero";
 
 const ContactPage: React.FC = () => {
@@ -37,6 +30,8 @@ const ContactPage: React.FC = () => {
         titleOne="NEED"
         titleTwo="HELP?"
         description="Find the support and answers you're looking for our dedicated team is here to assist you every step of the way."
+        backgroundImage="/images/ContactHero.png"
+        backgroundPosition="top center"
       />
       <section className={styles.contactForm}>
         <h2>SEND US A MESSAGE</h2>

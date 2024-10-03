@@ -14,6 +14,8 @@ const AboutPage = () => {
         titleOne="ABOUT"
         titleTwo="US"
         description="Our team, a blend of experienced expats and native Costa Ricans, is dedicated to guiding you through every step of your relocation journey with expertise and passion."
+        backgroundImage="/images/Office.png"
+        backgroundPosition="bottom center"
       />
       <div className={styles.storyContainer}>
         <div className={styles.storyAndImageContainer}>
