@@ -23,13 +23,13 @@ const Header: React.FC = () => {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about">About Us</Link>
           </li>
           <li>
             <Link href="/services">Courses</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact">Contact Us</Link>
           </li>
         </ul>
       </nav>
