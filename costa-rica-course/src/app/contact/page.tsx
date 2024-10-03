@@ -2,19 +2,20 @@
 
 import React, { useState, FormEvent } from "react";
 import styles from "./contact.module.scss"; // Import the SCSS module for styling
-import {
-  faFacebook,
-  faXTwitter,
-  faLinkedin,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons"; // Import social media icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesome component
+// import {
+//   faFacebook,
+//   faXTwitter,
+//   faLinkedin,
+//   faInstagram,
+// } from "@fortawesome/free-brands-svg-icons"; // Import social media icons
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesome component
 import { Hero } from "@/components/Hero";
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   });
 
@@ -44,7 +45,7 @@ const ContactPage: React.FC = () => {
         </p> */}
         <form onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Full name</label>
             <input
               type="text"
               id="name"
@@ -52,7 +53,7 @@ const ContactPage: React.FC = () => {
               value={formData.name}
               onChange={handleInputChange}
               required
-              placeholder="Enter your name"
+              placeholder=""
             />
           </div>
           <div className={styles.formGroup}>
@@ -64,18 +65,30 @@ const ContactPage: React.FC = () => {
               value={formData.email}
               onChange={handleInputChange}
               required
-              placeholder="Enter your email"
+              placeholder=""
             />
           </div>
           <div className={styles.formGroup}>
-            <label htmlFor="message">Message</label>
+            <label htmlFor="subject">Subject</label>
+            <input
+              type="subject"
+              id="subject"
+              name="subject"
+              value={formData.subject}
+              onChange={handleInputChange}
+              required
+              placeholder=""
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="message">Comment or Message</label>
             <textarea
               id="message"
               name="message"
               value={formData.message}
               onChange={handleInputChange}
               required
-              placeholder="Your message here..."
+              placeholder=""
             ></textarea>
           </div>
           <button type="submit" className={styles.submitButton}>
