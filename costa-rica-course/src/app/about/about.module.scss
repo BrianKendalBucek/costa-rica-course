@@ -51,7 +51,10 @@
       .story {
         width: 463px;
         height: 478px;
-        // background-color: red;
+
+        h2 {
+          margin-top: 0;
+        }
       }
   
       .images {
@@ -63,14 +66,30 @@
           display: flex;
           
           .imageTopLeft {
-            // background-color: green;
             background-image: url('/images/lisa-green.png');
             width: 50%
           }
           
           .imageTopRight {
-            background-color: pink;
             width: 50%;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+            // padding-right: 10px;
+
+            h4 {
+              color: black;
+              font-size: 14px;
+              font-weight: 800;
+            }
+
+            h5 {
+              font-size: 12px;
+              font-weight: 400;
+              margin: 0;
+            }
           }
         }
         
@@ -79,8 +98,20 @@
           display: flex;
           
           .imageBottomLeft {
-            background-color: red;
             width: 50%;
+            // padding-left: 10px;
+            
+            h4 {
+              color: black;
+              font-size: 14px;
+              font-weight: 800;
+            }
+
+            h5 {
+              font-size: 12px;
+              font-weight: 400;
+              margin: 0;
+            }
           }
           
           .imageBottomRight {
