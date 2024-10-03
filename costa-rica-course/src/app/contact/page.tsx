@@ -3,9 +3,9 @@
 import React, { useState, FormEvent } from "react";
 import styles from "./contact.module.scss"; // Import the SCSS module for styling
 import {
-  faFacebookF,
-  faTwitter,
-  faLinkedinIn,
+  faFacebook,
+  faXTwitter,
+  faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons"; // Import social media icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesome component
@@ -39,9 +39,9 @@ const ContactPage: React.FC = () => {
       />
       <section className={styles.contactForm}>
         <h2>SEND US A MESSAGE</h2>
-        <p>
+        {/* <p>
           We&apos;d love to hear from you. Fill out the form below to get in touch!
-        </p>
+        </p> */}
         <form onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
             <label htmlFor="name">Name</label>
@@ -84,7 +84,7 @@ const ContactPage: React.FC = () => {
         </form>
       </section>
 
-      <section className={styles.socialMedia}>
+      {/* <section className={styles.socialMedia}>
         <h2>Follow Us</h2>
         <div className={styles.socialIcons}>
           <a
@@ -93,7 +93,7 @@ const ContactPage: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faFacebookF} className={styles.facebook} />
+            <FontAwesomeIcon icon={faFacebook} className={styles.facebook} />
           </a>
           <a
             href="https://twitter.com"
@@ -101,7 +101,7 @@ const ContactPage: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faTwitter} className={styles.xtwitter} />
+            <FontAwesomeIcon icon={faXTwitter} className={styles.xtwitter} />
           </a>
           <a
             href="https://linkedin.com"
@@ -109,7 +109,7 @@ const ContactPage: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faLinkedinIn} className={styles.linkedin} />
+            <FontAwesomeIcon icon={faLinkedin} className={styles.linkedin} />
           </a>
           <a
             href="https://instagram.com"
@@ -117,10 +117,10 @@ const ContactPage: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
+            <FontAwesomeIcon icon={faInstagram} className={styles.instagram} />
           </a>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

@@ -1,18 +1,25 @@
 .contactPage {
-
+  
   .contactForm {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     h2 {
-
+      margin-top: 80px;
     }
-
-    p {
-
-    }
-
+    
+    // p {
+      
+    // }
+    
     form {
+      width: 1022.5px;
 
       .formGroup {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
 
         label {
 
@@ -33,20 +40,36 @@
     }
   }
 
-  .socialMedia {
+  // .socialMedia {
 
-    h2 {
+  //   h2 {
 
-    }
+  //   }
 
-    .socialIcons {
+  //   .socialIcons {
 
-      a {
+  //     a {
 
-        .facebook {
+  //       .facebook {
+  //         font-size: 20px;
+  //         color: #3B5998;
+  //       }
+    
+  //       .xtwitter {
+  //         font-size: 20px;
+  //       }
+    
+  //       .linkedin {
+  //         font-size: 20px;
+  //         color: #0077B5;
+  //       }
 
-        }
-      }
-    }
-  }
+  //       .instagram {
+  //         font-size: 20px;
+  //         color: #E1306C;
+  //         // background: linear-gradient(45deg, #833ab4, #fd1d1d, #f77737);
+  //       }
+  //     }
+  //   }
+  // }
 }
