@@ -84,6 +84,7 @@ const LoginPage = () => {
           <div className={styles.home}>
             <Link href="/">&lt; Go to the Costa Rica Course</Link>
           </div>
+          <div className={styles.copyright}>Copyright<span>®</span>2024 The Costa Rica Course</div>
         </div>
       </div>
     </main>
