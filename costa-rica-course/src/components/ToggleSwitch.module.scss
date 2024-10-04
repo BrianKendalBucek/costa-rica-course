@@ -1,16 +1,13 @@
-/* ToggleSwitch.module.scss */
 .container {
-  // text-align: center;
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 12px;
 
-
   .toggle_switch {
     position: relative;
-    width: 40px; /* Set toggle switch width */
-    height: 20px; /* Set toggle switch height */
+    width: 40px;
+    height: 20px;
     display: inline-block;
     text-align: left;
 
@@ -20,47 +17,47 @@
 
     .label {
       display: block;
-      width: 100%; /* Match width of the toggle switch */
-      height: 100%; /* Match height of the toggle switch */
+      width: 100%;
+      height: 100%;
       overflow: hidden;
       cursor: pointer;
-      border-radius: 20px; /* Make the border rounded */
-      background-color: #bbb; /* Default background color */
+      border-radius: 20px;
+      background-color: #bbb;
       position: relative;
       transition: background-color 0.3s ease-in-out;
 
       .inner {
         display: block;
-        width: 200%; /* Full width of both ON and OFF states */
-        margin-left: -100%; /* Start with the OFF state hidden */
-        height: 100%; /* Match height of the label */
+        width: 200%;
+        margin-left: -100%;
+        height: 100%;
         transition: margin 0.3s ease-in-out;
       }
 
       .switch {
         display: block;
-        width: 15px; /* Smaller switch knob size */
-        height: 15px; /* Smaller switch knob size */
-        margin: 0.5px; /* Space between knob and container edges */
+        width: 15px;
+        height: 15px;
+        margin: 0.5px;
         background: #fff;
         position: absolute;
-        top: 2px; /* Vertical center */
-        bottom: 2px; /* Vertical center */
-        right: 21px; /* Start position of the knob */
-        border-radius: 50%; /* Make the knob circular */
+        top: 2px;
+        bottom: 2px;
+        right: 21px;
+        border-radius: 50%;
         transition: all 0.3s ease-in-out;
       }
     }
 
     .checkbox:checked + .label {
-      background-color: lightblue; /* Background color when checked */
+      background-color: lightblue;
 
       .inner {
-        margin-left: 0; /* Show the ON state */
+        margin-left: 0;
       }
 
       .switch {
-        right: 2px; /* Position the switch knob to the left */
+        right: 2px;
       }
     }
   }

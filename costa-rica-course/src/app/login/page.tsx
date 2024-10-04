@@ -69,10 +69,12 @@ const LoginPage = () => {
               />
             </div>
             <div className={styles.rememberForgotContainer}>
-              <div className={styles.remember}></div>
-              <div className={styles.forgot}></div>
+              {/* <div className={styles.remember}></div> */}
+              <ToggleSwitch label="Remember me" onToggle={handleToggle} initialState={true} />
+              <div className={styles.forgot}>
+                <Link href="/forgot-password">Forgot password?</Link>
+              </div>
             </div>
-            <ToggleSwitch label="Remember me" onToggle={handleToggle} initialState={true} />
             <button type="submit">Log In</button>
           </form>
           <div className={styles.register}>
