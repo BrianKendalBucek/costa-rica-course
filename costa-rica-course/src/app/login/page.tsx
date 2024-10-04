@@ -4,6 +4,7 @@ import React, { useState, FormEvent } from "react";
 import styles from "./login.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import ToggleSwitch from "@/components/ToggleSwitch";
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -21,6 +22,10 @@ const LoginPage = () => {
     e.preventDefault();
     console.log("Form Data Submitted: ", formData);
     // You can add logic to send form data to an API or backend server here
+  };
+
+  const handleToggle = (checked: boolean) => {
+    console.log('Toggle Switch is now:', checked);
   };
 
   return (
@@ -67,6 +72,7 @@ const LoginPage = () => {
               <div className={styles.remember}></div>
               <div className={styles.forgot}></div>
             </div>
+            <ToggleSwitch label="Remember me" onToggle={handleToggle} initialState={true} />
             <button type="submit">Log In</button>
           </form>
           <div className={styles.register}>
