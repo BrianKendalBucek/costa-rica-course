@@ -12,7 +12,6 @@
     flex-direction: column;
     justify-content: flex-end;
 
-
     .topHeader {
       margin: 0;
       font-size: 38.37px;
@@ -25,7 +24,7 @@
       margin: 0;
       font-size: 38.37px;
       font-weight: 700;
-      color: #A1CDBB;
+      color: #a1cdbb;
       margin-left: 40px;
       margin-bottom: 40px;
     }
@@ -46,6 +45,9 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #e5e5e5;
 
         .formGroup {
           display: flex;
@@ -63,12 +65,13 @@
             width: 360px;
             height: 48px;
           }
-
         }
 
         .rememberForgotContainer {
-          .remember {}
-          .forgot {}
+          .remember {
+          }
+          .forgot {
+          }
         }
 
         button {
@@ -79,6 +82,37 @@
           border: none;
           font-size: 15px;
           font-weight: 700;
+        }
+      }
+
+      .register {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 35px;
+
+        p {
+          font-size: 12px;
+        }
+
+        a {
+          color: #007aff;
+          font-size: 12px;
+          text-decoration: none;
+          // &:hover {
+          //   color: #0070f3;
+          // }
+        }
+      }
+
+      .home {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+
+        a {
+          text-decoration: none;
+          color: black;
         }
       }
     }

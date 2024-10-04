@@ -3,6 +3,7 @@
 import React, { useState, FormEvent } from "react";
 import styles from "./login.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -68,6 +69,13 @@ const LoginPage = () => {
             </div>
             <button type="submit">Log In</button>
           </form>
+          <div className={styles.register}>
+            <p>Don&apos;t have an account?</p>
+            <Link href="/register">Sign up now</Link>
+          </div>
+          <div className={styles.home}>
+            <Link href="/">&lt; Go to the Costa Rica Course</Link>
+          </div>
         </div>
       </div>
     </main>
