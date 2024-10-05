@@ -35,13 +35,6 @@ const LoginPage = () => {
         <h1 className={styles.bottomHeader}>EXPAT LIFE</h1>
       </div>
       <div className={styles.loginFormContainer}>
-        <Image
-          src="/images/LoginLogo.png"
-          alt="Logo"
-          width={201}
-          height={124.73}
-          priority
-        />
         <div className={styles.loginForm}>
           <form onSubmit={handleSubmit}>
             <div className={styles.formGroup}>

@@ -1,0 +1,40 @@
+.studentReviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 343.44px;
+  height: 218px;
+  box-shadow: 5.46px 6.55px 23.7px 0 rgba(0, 0, 0, 0.15);
+  padding: 20px;
+
+
+  p {
+    
+  }
+
+  .studentData {
+    display: flex;
+    gap: 15px;
+
+    .studentInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+        font-size: 14.64px;
+        font-weight: 700;
+        color: #025198;
+      }
+
+      h4 {
+        margin: 0;
+        font-size: 14.64px;
+        font-weight: 400;
+        color: black;
+      }
+    }
+  }
+  
+}

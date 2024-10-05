@@ -69,3 +69,30 @@ export const steps = [
     details: "Move your business and your money offshore to reduce taxes and grow your business faster. This includes tax planning and offshore banking, companies, and merchant accounts."
   }
 ];
+
+export const studentReviews = [
+  {
+    image: 'https://via.placeholder.com/100x100?text=Student+1',
+    title: 'Jack Brownn',
+    subtitle: 'From London, UKA',
+    description: 'This course was really helpful and exceeded my expectations! I highly recommend it to anyone looking to advance their skills.',
+  },
+  {
+    image: 'https://via.placeholder.com/100x100?text=Student+2',
+    title: 'Zasha Swan',
+    subtitle: 'From Sydney, Australia',
+    description: 'I loved the hands-on approach and the personalized feedback from the instructor. Definitely worth the investment!',
+  },
+  {
+    image: 'https://via.placeholder.com/100x100?text=Student+3',
+    title: 'Kelvin Black',
+    subtitle: 'From Dallas, USA',
+    description: 'The course content was well-structured and the support from peers and mentors was invaluable.',
+  },
+  {
+    image: 'https://via.placeholder.com/100x100?text=Student+3',
+    title: 'Daniel Johnson',
+    subtitle: 'Alberta, Canada',
+    description: 'The course content was well-structured and the support from peers and mentors was invaluable.',
+  },
+];

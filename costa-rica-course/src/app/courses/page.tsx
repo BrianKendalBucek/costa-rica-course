@@ -2,6 +2,7 @@
 
 import styles from './courses.module.scss';
 import { Hero } from '@/components/Hero';
+import StudentReview from '@/components/StudentReviews';
 import { Students } from '@/components/Students';
 
 const CoursesPage = () => {
@@ -14,6 +15,9 @@ const CoursesPage = () => {
         backgroundImage="/images/MainCourseHero.png"
         backgroundPosition="top center"
       />
+      <div className={styles.workDiv}>
+        <StudentReview />
+      </div>
       <Students />
     </main>
   );
