@@ -7,19 +7,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'; // Correct import path for modules
 
-// Define the images array
-const images = [
-  'https://via.placeholder.com/600x400?text=Slide+1',
-  'https://via.placeholder.com/600x400?text=Slide+2',
-  'https://via.placeholder.com/600x400?text=Slide+3',
-];
-
-const Carousel: React.FC = () => {
+const Carousel = ({images}) => {
   return (
     <div>
       <Swiper
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={8}
         loop={true}
         autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
@@ -28,7 +21,7 @@ const Carousel: React.FC = () => {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <img src={image} alt={`Slide ${index}`} style={{ width: '100%', height: 'auto' }} />
+            <img src={image} alt={`Slide ${index}`} style={{ width: '320px', height: '218px' }} />
           </SwiperSlide>
         ))}
       </Swiper>

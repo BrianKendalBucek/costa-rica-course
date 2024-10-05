@@ -2,7 +2,7 @@
 
 import styles from './courses.module.scss';
 import { Hero } from '@/components/Hero';
-import Carousel from '@/components/Carousel';
+import { Students } from '@/components/Students';
 
 const CoursesPage = () => {
   return (
@@ -14,7 +14,7 @@ const CoursesPage = () => {
         backgroundImage="/images/MainCourseHero.png"
         backgroundPosition="top center"
       />
-      <Carousel />
+      <Students />
     </main>
   );
 };
