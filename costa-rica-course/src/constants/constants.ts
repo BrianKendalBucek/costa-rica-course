@@ -72,27 +72,27 @@ export const steps = [
 
 export const studentReviews = [
   {
-    image: 'https://via.placeholder.com/100x100?text=Student+1',
-    title: 'Jack Brownn',
-    subtitle: 'From London, UKA',
+    image: '/images/Student 1.png',
+    title: 'Zasha Swan',
+    subtitle: 'From Sydney, Australia',
     description: 'This course was really helpful and exceeded my expectations! I highly recommend it to anyone looking to advance their skills.',
   },
   {
-    image: 'https://via.placeholder.com/100x100?text=Student+2',
-    title: 'Zasha Swan',
-    subtitle: 'From Sydney, Australia',
+    image: '/images/Student 2.png',
+    title: 'Jack Brown',
+    subtitle: 'From London, UK',
     description: 'I loved the hands-on approach and the personalized feedback from the instructor. Definitely worth the investment!',
   },
   {
-    image: 'https://via.placeholder.com/100x100?text=Student+3',
+    image: '/images/Student 3.png',
     title: 'Kelvin Black',
     subtitle: 'From Dallas, USA',
     description: 'The course content was well-structured and the support from peers and mentors was invaluable.',
   },
   {
-    image: 'https://via.placeholder.com/100x100?text=Student+3',
+    image: '/images/Student 4.png',
     title: 'Daniel Johnson',
-    subtitle: 'Alberta, Canada',
+    subtitle: 'From Alberta, Canada',
     description: 'The course content was well-structured and the support from peers and mentors was invaluable.',
   },
 ];

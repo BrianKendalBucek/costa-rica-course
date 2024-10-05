@@ -1,30 +1,22 @@
-import React from "react";
-import styles from "./StudentReviews.module.scss";
-import Image from "next/image";
+// StudentReviews.tsx
+import React from 'react';
+import StudentReview from './StudentReview'; // Import the StudentReview component
+import { studentReviews } from '@/constants/constants';
 
-const StudentReview = () => {
+const StudentReviews: React.FC = () => {
   return (
-    <div className={styles.studentReviews}>
-      <p>
-        &quot;I appreciated the practical advice and real-life insights. The
-        lessons on cultural integration were especially helpful and
-        eye-opening.&quot;
-      </p>
-      <div className={styles.studentData}>
-        <Image
-          src="/images/Student 1.png"
-          alt="Logo"
-          width={43}
-          height={43}
-          priority
+    <div>
+      {studentReviews.map((review, index) => (
+        <StudentReview
+          key={index}
+          image={review.image}
+          title={review.title}
+          subtitle={review.subtitle}
+          description={review.description}
         />
-        <div className={styles.studentInfo}>
-          <h3>Zasha Swan</h3>
-          <h4>From Sydney, Australia</h4>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };
 
-export default StudentReview;
+export default StudentReviews;

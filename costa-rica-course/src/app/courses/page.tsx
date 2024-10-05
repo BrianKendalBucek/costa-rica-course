@@ -1,11 +1,11 @@
 "use client";
 
-import styles from './courses.module.scss';
-import { Hero } from '@/components/Hero';
-import StudentReview from '@/components/StudentReviews';
-import { Students } from '@/components/Students';
+import styles from "./courses.module.scss";
+import { Hero } from "@/components/Hero";
+import { Students } from "@/components/Students";
 
-const CoursesPage = () => {
+const CoursesPage: React.FC = () => {
+
   return (
     <main className={styles.coursesPage}>
       <Hero
@@ -15,9 +15,6 @@ const CoursesPage = () => {
         backgroundImage="/images/MainCourseHero.png"
         backgroundPosition="top center"
       />
-      <div className={styles.workDiv}>
-        <StudentReview />
-      </div>
       <Students />
     </main>
   );

@@ -1,28 +1,40 @@
-// Carousel.tsx
-import React from 'react';
+"use client";
+
+import React, { ReactNode } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules'; // Correct import path for modules
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-const Carousel = ({images}) => {
+interface CarouselProps<T> {
+  data: T[];
+  renderSlide: (item: T) => ReactNode;
+  slidesPerView?: number;
+  spaceBetween?: number;
+}
+
+const Carousel = <T,>({ data, renderSlide, slidesPerView = 1, spaceBetween = 50 }: CarouselProps<T>) => {
+
+  if (data === undefined || !Array.isArray(data) || data.length === 0) {
+    console.error("Data is undefined or empty.");
+    return;
+  }
+
   return (
     <div>
       <Swiper
-        spaceBetween={50}
-        slidesPerView={8}
+        spaceBetween={spaceBetween}
+        slidesPerView={slidesPerView}
         loop={true}
         autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
         navigation={true}
-        modules={[Navigation, Pagination, Autoplay]} // Register the necessary Swiper modules
+        modules={[Navigation, Pagination, Autoplay]}
       >
-        {images.map((image, index) => (
-          <SwiperSlide key={index}>
-            <img src={image} alt={`Slide ${index}`} style={{ width: '320px', height: '218px' }} />
-          </SwiperSlide>
+        {data.map((item, index) => (
+          <SwiperSlide key={index}>{renderSlide(item)}</SwiperSlide>
         ))}
       </Swiper>
     </div>
