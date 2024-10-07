@@ -54,28 +54,41 @@ $text-color: #333;
   .contentGrid {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
+    width: 100%;
   
     .card {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 415px;
+      // width: 415px;
+      width: 100%;
       text-align: center;
       margin-top: 50px;
+      box-sizing: border-box;
 
       .cardMainCourse {
-        width: 695.56px;
+        // width: 695.56px;
+        width: 100%;
       }
     }
   
     .trio {
-      width: 100vw;
+      width: 100%;
+      height: auto;
       display: flex;
       justify-content: center;
       gap: 20px;
       margin-top: 50px;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .studentsContainer {
+      width: 100%; // Full width of its parent container
+      display: flex;
+      justify-content: center; // Center the Students component
+      box-sizing: border-box; // Include padding/border in width calculation
     }
   }
 }

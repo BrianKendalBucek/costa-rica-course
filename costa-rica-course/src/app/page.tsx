@@ -50,7 +50,9 @@ const HomePage: React.FC = () => {
               proficiency, and practical tips for a successful relocation.
             </p>
           </div>
-          <Students />
+          <div className={styles.studentsContainer}>
+            <Students />
+          </div>
         </section>
       </main>
     </>
