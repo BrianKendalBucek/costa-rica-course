@@ -35,3 +35,7 @@ h4 {
 p {
   margin: 0;
 }
+
+.swiper {
+  overflow: unset !important; /* Apply unset and use !important to override */
+}

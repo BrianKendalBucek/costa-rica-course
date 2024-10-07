@@ -10,16 +10,14 @@ const StudentReviewCarousel: React.FC = () => {
 
   useEffect(() => {
     setReviews(studentReviews);
-    console.log("Reviews loaded:", studentReviews);
   }, []);
 
   if (reviews.length === 0) return <div>Loading reviews...</div>;
-  console.log("Rendering with reviews:", reviews);
 
   return (
     <Carousel
       data={reviews}
-      slidesPerView={Math.min(3, reviews.length)}
+      slidesPerView={Math.min(5, reviews.length)}
       renderSlide={(review) => (
         <StudentReview
           key={review.title}

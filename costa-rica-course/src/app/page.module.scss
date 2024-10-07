@@ -1,78 +1,76 @@
 $text-color: #333;
 
 .main {
-
   .hero {
     padding: 2rem;
     height: 746px;
     width: auto;
-    background-image: url('/images/Rectangle 10 (7).png');
+    background-image: url("/images/Rectangle 10 (7).png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     display: flex;
     align-items: center;
-  
+
     .titleContainer {
       height: 400px;
       width: 370px;
       margin-left: 60px;
     }
-  
+
     .title {
       font-size: 65px;
       font-weight: 400;
       color: white;
       margin: 0;
     }
-  
+
     .title2 {
       font-size: 65px;
       font-weight: 700;
-      color: #A1CDBB;
+      color: #a1cdbb;
       margin: 0;
     }
-  
+
     .titleDescription {
       color: white;
       text-align: justify;
     }
-  
+
     .titleButton {
       border-radius: 20px;
       font-size: 20px;
       font-weight: 600;
-      background-color: rgb(255, 255, 255, 0.2); // Set the background color with 70% opacity
+      background-color: rgb(255, 255, 255, 0.2);
       border: 2px solid white;
-      color: white; // Text color remains fully opaque
+      color: white;
       padding: 10px 20px;
       cursor: pointer;
       margin-top: 20px;
     }
   }
-  
+
   .contentGrid {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-  
+
     .card {
       display: flex;
       flex-direction: column;
       align-items: center;
-      // width: 415px;
+
       width: 100%;
       text-align: center;
       margin-top: 50px;
       box-sizing: border-box;
 
       .cardMainCourse {
-        // width: 695.56px;
-        width: 100%;
+        width: 695px;
       }
     }
-  
+
     .trio {
       width: 100%;
       height: auto;
@@ -85,10 +83,11 @@ $text-color: #333;
     }
 
     .studentsContainer {
-      width: 100%; // Full width of its parent container
+      width: 100%;
       display: flex;
-      justify-content: center; // Center the Students component
-      box-sizing: border-box; // Include padding/border in width calculation
+      justify-content: center;
+      box-sizing: border-box;
+      margin-bottom: 150px;
     }
   }
 }
