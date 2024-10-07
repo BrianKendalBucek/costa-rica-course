@@ -22,19 +22,12 @@ interface CarouselProps<T> {
   loop?: boolean;
   autoplayDelay?: number;
   effect?: "coverflow" | "slide" | "fade" | "cube";
-  // coverflowEffect?: {
-  //   rotate?: number;
-  //   stretch?: number;
-  //   depth?: number;
-  //   modifier?: number;
-  //   slideShadows?: boolean;
-  // };
 }
 
 const Carousel = <T,>({
   data,
   renderSlide,
-  slidesPerView = 1,
+  slidesPerView = 3,
   spaceBetween = 50,
   loop = true,
   autoplayDelay = 3000,
@@ -54,7 +47,7 @@ const Carousel = <T,>({
         autoplay={{ delay: autoplayDelay }}
         pagination={{ clickable: true }}
         navigation={true}
-        effect={effect} // Apply the effect dynamically
+        effect={effect}
         modules={modules} // Use the dynamic modules array
         coverflowEffect={
           effect === "coverflow"
