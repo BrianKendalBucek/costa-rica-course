@@ -5,6 +5,7 @@ import ImageWithText from "@/components/ImageWithText";
 import { Instructor } from "@/components/Instructor";
 import { ThreeSteps } from "@/components/ThreeSteps";
 import { Students } from "@/components/Students";
+import { Courses } from "@/components/Courses";
 
 const HomePage: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const HomePage: React.FC = () => {
               BEGIN THE ADVENTURE &gt;
             </button>
           </div>
+          <Courses />
         </section>
 
         <section className={styles.contentGrid}>

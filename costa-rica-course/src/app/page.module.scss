@@ -11,6 +11,8 @@ $text-color: #333;
     background-position: center center;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
 
     .titleContainer {
       height: 400px;
