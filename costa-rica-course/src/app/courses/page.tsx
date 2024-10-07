@@ -1,8 +1,9 @@
 "use client";
 
+import { Courses } from "@/components/Courses";
 import styles from "./courses.module.scss";
 import { Hero } from "@/components/Hero";
-import { Students } from "@/components/Students";
+// import { Students } from "@/components/Students";
 
 const CoursesPage: React.FC = () => {
 
@@ -15,7 +16,8 @@ const CoursesPage: React.FC = () => {
         backgroundImage="/images/MainCourseHero.png"
         backgroundPosition="top center"
       />
-      <Students />
+      {/* <Students /> */}
+      <Courses />
     </main>
   );
 };

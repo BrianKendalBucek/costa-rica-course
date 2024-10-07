@@ -120,3 +120,37 @@ export const studentReviews = [
     description: 'The course content was well-structured and the support from peers and mentors was invaluable.',
   },
 ];
+
+export const courseData = [
+  {
+    id: 1,
+    image: "/images/course 1.jpg",
+    title: "Introduction to Costa Rican Culture",
+    description: "Learn about the cultural norms, values, and history of Costa Rica.",
+  },
+  {
+    id: 2,
+    image: "/images/course 2.jpg",
+    title: "Spanish Language Basics",
+    description: "Master the basics of Spanish to help navigate your life as an expat.",
+  },
+  {
+    id: 3,
+    image: "/images/course 3.jpg",
+    title: "Legal Requirements for Expats",
+    description: "Understand the legal processes for residency, work permits, and more.",
+  },
+  {
+    id: 4,
+    image: "/images/course 4.jpg",
+    title: "Legal Requirements for Expats",
+    description: "Understand the legal processes for residency, work permits, and more.",
+  },
+  {
+    id: 5,
+    image: "/images/course 5.jpg",
+    title: "Legal Requirements for Expats",
+    description: "Understand the legal processes for residency, work permits, and more.",
+  },
+  // Add more courses as needed
+];

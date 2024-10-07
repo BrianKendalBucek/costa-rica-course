@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+// import { Suspense } from "react";
 import StudentReviewCarousel from "./StudentReviewCarousel";
 import styles from "./Students.module.scss";
 
@@ -6,9 +6,7 @@ export const Students = () => {
   return (
     <div className={styles.card}>
       <h2>WHAT OUR STUDENTS HAVE TO SAY</h2>
-      <Suspense fallback={<div>Loading...</div>}>
-        <StudentReviewCarousel />
-      </Suspense>
+      <StudentReviewCarousel />
     </div>
   );
 };
