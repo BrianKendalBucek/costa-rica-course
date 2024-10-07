@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from './CoursesCard';
+import styles from './CoursesCard.module.scss';
 
 const CoursesCard = ({ image, title, description }) => {
   return (
