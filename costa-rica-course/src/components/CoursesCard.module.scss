@@ -4,19 +4,65 @@
   // border: 1px solid grey;
   border-radius: 4px;
   background-color: #F3F3F3;
-  padding: 10px 0;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  img {
-    border-radius: 4px;
+  .upperSection {
+
+    img {
+      border-radius: 4px;
+    }
+  
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  
+    p {
+      // padding: 10px;
+      margin: 20px;
+      text-align: left;
+      font-size: 13.27px;
+    }
   }
 
-  p {
-    padding: 0px;
-  }
 
-  // a {
-  //   img {
-  //     height: 322px;
-  //   }
-  // }
+  .priceAndButton {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: end;
+    margin-bottom: 20px;
+
+    .priceOldAndNew {
+      padding-left: 20px;
+
+      .priceOld {
+        text-decoration: line-through;
+        color: #7F7F7F;
+        font-size: 19.76px;
+        font-weight: 500;
+        margin: 0;
+
+      }
+
+      .priceNew {
+        font-size: 42.95px;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+
+    button {
+      width: 130px;
+      height: 44.55px;
+      color: white;
+      background-color: black;
+      border-radius: 4px;
+      font-size: 16.41;
+      font-weight: 600;
+    }
+  }
 }

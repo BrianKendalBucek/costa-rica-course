@@ -19,9 +19,16 @@ interface CarouselProps<T> {
   renderSlide: (item: T) => ReactNode;
   slidesPerView?: number;
   spaceBetween?: number;
-  loop?: boolean; // Make the loop dynamic
-  autoplayDelay?: number; // Dynamic delay for autoplay
-  effect?: "coverflow" | "slide" | "fade" | "cube"; // Define allowed effect types
+  loop?: boolean;
+  autoplayDelay?: number;
+  effect?: "coverflow" | "slide" | "fade" | "cube";
+  // coverflowEffect?: {
+  //   rotate?: number;
+  //   stretch?: number;
+  //   depth?: number;
+  //   modifier?: number;
+  //   slideShadows?: boolean;
+  // };
 }
 
 const Carousel = <T,>({
@@ -31,9 +38,8 @@ const Carousel = <T,>({
   spaceBetween = 50,
   loop = true,
   autoplayDelay = 3000,
-  effect = "slide", // Set default effect to "slide"
+  effect = "slide",
 }: CarouselProps<T>) => {
-  // Determine the modules to use based on the effect prop
   const modules = [Navigation, Pagination, Autoplay];
   if (effect === "coverflow") {
     modules.push(EffectCoverflow);
@@ -53,13 +59,13 @@ const Carousel = <T,>({
         coverflowEffect={
           effect === "coverflow"
             ? {
-              rotate: 50,
+              rotate: 0,
               stretch: 0,
-              depth: 100,
+              depth: 200,
               modifier: 1,
-              slideShadows: true,
+              slideShadows: false,
             }
-            : undefined // If not coverflow, leave it undefined
+            : undefined
         }
       >
         {data.map((item, index) => (

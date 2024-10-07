@@ -125,8 +125,8 @@ export const courseData = [
   {
     id: 1,
     image: "/images/course 1.jpg",
-    title: "Introduction to Costa Rican Culture",
-    description: "Learn about the cultural norms, values, and history of Costa Rica.",
+    title: "How to move to Costa Rica",
+    description: "Unlock the secrets to a successful expat life in Costa Rica with our comprehensive course, covering everything from legal procedures to cultural integration.",
   },
   {
     id: 2,

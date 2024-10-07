@@ -20,7 +20,7 @@ const CourseCarousel: React.FC = () => {
     <Carousel
       data={courses}
       slidesPerView={3} // Display 3 courses at a time
-      spaceBetween={50} // Space between slides
+      spaceBetween={100} // Space between slides
       effect="coverflow" // Use coverflow effect
       autoplayDelay={5000} // Optional: Set autoplay delay to 5 seconds
       renderSlide={(course) => (
