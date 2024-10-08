@@ -16,10 +16,10 @@ const CoursesPage: React.FC = () => {
         backgroundImage="/images/MainCourseHero.png"
         backgroundPosition="top center"
       />
-      <Students />
       <div className={styles.coursesCarousel}>
         <Courses />
       </div>
+      <Students />
     </main>
   );
 };

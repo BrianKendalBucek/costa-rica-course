@@ -4,11 +4,13 @@ import React, { ReactNode } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
+import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import {
   EffectCoverflow,
+  EffectFade,
   Navigation,
   Pagination,
   Autoplay,
@@ -33,13 +35,14 @@ const Carousel = <T,>({
   autoplayDelay = 3000,
   effect = "slide",
 }: CarouselProps<T>) => {
-  const modules = [Navigation, Pagination, Autoplay];
+  const modules = [Navigation, Pagination, Autoplay, EffectFade];
   if (effect === "coverflow") {
     modules.push(EffectCoverflow);
   }
 
   return (
     <div>
+
       <Swiper
         spaceBetween={spaceBetween}
         slidesPerView={slidesPerView}
@@ -48,6 +51,8 @@ const Carousel = <T,>({
         pagination={{ clickable: true }}
         navigation={true}
         effect={effect}
+        centeredSlides={true}
+        grabCursor={true}
         modules={modules} // Use the dynamic modules array
         coverflowEffect={
           effect === "coverflow"
@@ -56,7 +61,7 @@ const Carousel = <T,>({
               stretch: 0,
               depth: 200,
               modifier: 1,
-              slideShadows: false,
+              slideShadows: true,
             }
             : undefined
         }
