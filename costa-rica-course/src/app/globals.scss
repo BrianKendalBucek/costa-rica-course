@@ -36,6 +36,23 @@ p {
   margin: 0;
 }
 
-// .swiper {
-//   overflow: unset !important; /* Apply unset and use !important to override */
+.swiper {
+  // overflow: unset !important; /* Apply unset and use !important to override */
+  // margin: 50px !important;
+  padding: 70px !important; 
+}
+
+// .swiper swiper-initialized swiper-horizontal swiper-backface-hidden
+
+// .swiper-slide {
+//   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+//   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+//   -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7);
+// }
+
+// increment z-index for each slide
+// @for $i from 1 to 10 {
+//   .swiper-slide:nth-child(#{$i}):hover {
+//     z-index: $i;
+//   }
 // }

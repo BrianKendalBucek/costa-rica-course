@@ -45,3 +45,13 @@
   font-weight: normal;
   color: #777;
 }
+
+// .swiper-button-next, .swiper-button-previous {
+//   color: purple;
+// }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #a1cdbb; /* Change this to your desired color */
+  background: transparent; /* Optional: remove default background */
+}

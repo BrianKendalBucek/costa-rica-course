@@ -6,6 +6,7 @@ import { Instructor } from "@/components/Instructor";
 import { ThreeSteps } from "@/components/ThreeSteps";
 import { Students } from "@/components/Students";
 import { Courses } from "@/components/Courses";
+import MainCourse from "@/components/MainCourse";
 
 const HomePage: React.FC = () => {
   return (
@@ -51,6 +52,7 @@ const HomePage: React.FC = () => {
               covering legal requirements, cultural acclimatization, language
               proficiency, and practical tips for a successful relocation.
             </p>
+            <MainCourse />
           </div>
           <div className={styles.studentsContainer}>
             <Students />
