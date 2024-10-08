@@ -25,7 +25,7 @@ const LoginPage = () => {
   };
 
   const handleToggle = (checked: boolean) => {
-    console.log('Toggle Switch is now:', checked);
+    console.log("Toggle Switch is now:", checked);
   };
 
   return (
@@ -35,6 +35,13 @@ const LoginPage = () => {
         <h1 className={styles.bottomHeader}>EXPAT LIFE</h1>
       </div>
       <div className={styles.loginFormContainer}>
+        <Image
+          src="/images/LoginLogo.png"
+          alt="Logo"
+          width={201}
+          height={124}
+          priority
+        />
         <div className={styles.loginForm}>
           <form onSubmit={handleSubmit}>
             <div className={styles.formGroup}>
@@ -63,7 +70,11 @@ const LoginPage = () => {
             </div>
             <div className={styles.rememberForgotContainer}>
               {/* <div className={styles.remember}></div> */}
-              <ToggleSwitch label="Remember me" onToggle={handleToggle} initialState={true} />
+              <ToggleSwitch
+                label="Remember me"
+                onToggle={handleToggle}
+                initialState={true}
+              />
               <div className={styles.forgot}>
                 <Link href="/forgot-password">Forgot password?</Link>
               </div>
@@ -77,7 +88,9 @@ const LoginPage = () => {
           <div className={styles.home}>
             <Link href="/">&lt; Go to the Costa Rica Course</Link>
           </div>
-          <div className={styles.copyright}>Copyright<span>®</span>2024 The Costa Rica Course</div>
+          <div className={styles.copyright}>
+            Copyright<span>®</span>2024 The Costa Rica Course
+          </div>
         </div>
       </div>
     </main>
