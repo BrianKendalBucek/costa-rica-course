@@ -7,7 +7,6 @@ $font-family: 'Arial', sans-serif;
   transition: $property $duration $timing;
 }
 
-// Styling for the FAQ container
 .faqContainer {
   max-width: 1069px;
   margin: 50px auto;
@@ -17,46 +16,42 @@ $font-family: 'Arial', sans-serif;
   h2 {
     text-align: center;
   }
-}
 
-.faqItems {
-  margin-top: 20px;
-}
+  .faqItems {
+    margin-top: 20px;
 
-// Styling for each FAQ item
-.faqItem {
-  margin-bottom: 15px;
-  border-bottom: 1px solid $secondary-color;
-  padding: 10px;
-  
-  // Expanded state for the FAQ item
-  &.expanded {
-    background: lighten($secondary-color, 45%);
-    // border-left: 4px solid $primary-color;
+    .faqItem {
+      margin-bottom: 15px;
+      border-bottom: 1px solid $secondary-color;
+      padding: 10px;
+      
+      // Expanded state for the FAQ item
+      &.expanded {
+        background: lighten($secondary-color, 45%);
+        // border-left: 4px solid $primary-color;
+      }
+      .faqQuestion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-weight: bold;
+        font-family: $font-family;
+        padding: 10px;
+        background: $primary-color;
+        color: #fff;
+        border-radius: 4px;
+      
+        @include transition-effect(all);
+        
+        &:hover {
+          background: darken($primary-color, 10%);
+        }
+      }
+    }
   }
 }
 
-// Styling for the question section
-.faqQuestion {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  font-weight: bold;
-  font-family: $font-family;
-  padding: 10px;
-  background: $primary-color;
-  color: #fff;
-  border-radius: 4px;
-
-  @include transition-effect(all);
-  
-  &:hover {
-    background: darken($primary-color, 10%);
-  }
-}
-
-// Styling for the answer section
 .faqAnswer {
   padding: 10px 20px;
   background: #fafafa;
