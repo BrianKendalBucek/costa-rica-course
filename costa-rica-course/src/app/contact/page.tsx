@@ -3,6 +3,7 @@
 import React, { useState, FormEvent } from "react";
 import styles from "./contact.module.scss";
 import { Hero } from "@/components/Hero";
+import FAQ from "@/components/FAQ";
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -88,6 +89,7 @@ const ContactPage: React.FC = () => {
           </button>
         </form>
       </section>
+      <FAQ />
     </main>
   );
 };

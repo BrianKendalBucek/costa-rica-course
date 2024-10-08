@@ -69,7 +69,6 @@ const LoginPage = () => {
               />
             </div>
             <div className={styles.rememberForgotContainer}>
-              {/* <div className={styles.remember}></div> */}
               <ToggleSwitch
                 label="Remember me"
                 onToggle={handleToggle}

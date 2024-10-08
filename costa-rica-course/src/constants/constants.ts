@@ -154,3 +154,23 @@ export const courseData = [
   },
   // Add more courses as needed
 ];
+
+export const faqItems = [
+  {
+    question: "How do I access the course materials?",
+    answer: "Once enrolled, you can access all course materials through our online learning platform, available 24/7, allowing you to learn at your own pace and convenience.",
+  },
+  {
+    question: "How long do I have access to the course materials?",
+    answer: "You will have lifetime access to the course materials once you are enrolled.",
+  },
+  {
+    question: "Can I get a refund if I'm not satisfied with the course?",
+    answer: "Yes, we offer a 30-day money-back guarantee. If you are not satisfied, contact us within 30 days for a full refund.",
+  },
+  {
+    question: "Do I need any specific software or equipment to take the course?",
+    answer: "No specific software or equipment is required. You can access the course materials from any device with internet access.",
+  },
+];
+
