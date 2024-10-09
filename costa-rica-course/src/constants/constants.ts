@@ -180,6 +180,9 @@ export const courses = [
     steps: [
       { title: "Introduction to Costa Rica", isComplete: true },
       { title: "Visa Requirements", isComplete: true },
+      { title: "Cost of Living", isComplete: false },
+      { title: "Finding the Right Location", isComplete: false },
+      { title: "Cultural Tips", isComplete: false },
     ],
   },
   {
@@ -187,6 +190,39 @@ export const courses = [
     steps: [
       { title: "Finding a Home", isComplete: false },
       { title: "Understanding the Healthcare System", isComplete: false },
+      { title: "Setting Up Utilities", isComplete: false },
+      { title: "Registering for Local Services", isComplete: false },
+      { title: "Building a Social Network", isComplete: false },
+    ],
+  },
+  {
+    title: "Starting a Business in Costa Rica",
+    steps: [
+      { title: "Understanding Business Culture", isComplete: false },
+      { title: "Registering a Company", isComplete: false },
+      { title: "Tax Regulations and Compliance", isComplete: false },
+      { title: "Hiring Local Employees", isComplete: false },
+      { title: "Marketing Your Business", isComplete: false },
+    ],
+  },
+  {
+    title: "Exploring Costa Rica",
+    steps: [
+      { title: "Top Places to Visit", isComplete: false },
+      { title: "Outdoor Activities", isComplete: false },
+      { title: "National Parks", isComplete: false },
+      { title: "Cultural Attractions", isComplete: false },
+      { title: "Cuisine and Dining", isComplete: false },
+    ],
+  },
+  {
+    title: "Living Like a Local",
+    steps: [
+      { title: "Learning Spanish", isComplete: false },
+      { title: "Navigating Public Transportation", isComplete: false },
+      { title: "Shopping and Groceries", isComplete: false },
+      { title: "Understanding Local Etiquette", isComplete: false },
+      { title: "Safety and Emergency Contacts", isComplete: false },
     ],
   },
 ];
