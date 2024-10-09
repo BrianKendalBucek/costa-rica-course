@@ -1,0 +1,21 @@
+.orderReview {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orderItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.sectionTitle {
+  margin-bottom: 20px;
+}
