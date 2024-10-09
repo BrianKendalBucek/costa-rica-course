@@ -1,12 +1,11 @@
 import React from "react";
 import styles from "./page.module.scss";
-import { images } from "@/constants/constants";
-import ImageWithText from "@/components/ImageWithText";
 import { Instructor } from "@/components/Instructor";
 import { ThreeSteps } from "@/components/ThreeSteps";
 import { Students } from "@/components/Students";
 import { Courses } from "@/components/Courses";
 import MainCourse from "@/components/MainCourse";
+import GoalVisual from "@/components/GoalVisual";
 
 const HomePage: React.FC = () => {
   return (
@@ -29,31 +28,10 @@ const HomePage: React.FC = () => {
         </section>
 
         <section className={styles.contentGrid}>
-          <div className={styles.card}>
-            <h2>WHAT IS YOUR GOAL?</h2>
-            <p>
-              Let us know your goal and we will tell you how we can help you
-              based on your details
-            </p>
-          </div>
-
-          <div className={styles.trio}>
-            {images.map((image) => (
-              <ImageWithText key={image.alt} image={image} />
-            ))}
-          </div>
+          <GoalVisual />
           <Instructor />
           <ThreeSteps />
-          <div className={styles.card}>
-            <h2>MAIN COURSE</h2>
-            <p className={styles.cardMainCourse}>
-              Embark on a comprehensive foundational course designed to guide
-              you through every aspect of becomming an expat in Costa Rica,
-              covering legal requirements, cultural acclimatization, language
-              proficiency, and practical tips for a successful relocation.
-            </p>
-            <MainCourse />
-          </div>
+          <MainCourse />
           <div className={styles.studentsContainer}>
             <Students />
           </div>

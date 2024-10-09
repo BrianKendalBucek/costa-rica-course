@@ -58,38 +58,11 @@ $text-color: #333;
     align-items: center;
     width: 100%;
 
-    .card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      width: 100%;
-      text-align: center;
-      margin-top: 50px;
-      box-sizing: border-box;
-
-      .cardMainCourse {
-        width: 695px;
-      }
-    }
-
-    .trio {
-      width: 100%;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 50px;
-      overflow: hidden;
-      box-sizing: border-box;
-    }
-
     .studentsContainer {
       width: 100%;
       display: flex;
       justify-content: center;
       box-sizing: border-box;
-      // margin-bottom: 150px;
     }
   }
 }
