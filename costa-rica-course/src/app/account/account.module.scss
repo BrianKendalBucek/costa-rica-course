@@ -1,0 +1,29 @@
+.accountContainer {
+  position: relative;
+
+  .hero {
+    position: relative;
+    z-index: 1;
+  }
+
+  .userModBlock {
+    position: absolute;
+    top: 280px;
+    left: 5%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .coursesStatsContainer {
+    height: 815px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .coursesStats {
+      width: 701px;
+      margin-top: 40px;
+      margin-left: 440px;
+    }
+  }
+}

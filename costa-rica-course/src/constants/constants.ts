@@ -174,3 +174,19 @@ export const faqItems = [
   },
 ];
 
+export const courses = [
+  {
+    title: "How to move to Costa Rica!",
+    steps: [
+      { title: "Introduction to Costa Rica", isComplete: true },
+      { title: "Visa Requirements", isComplete: true },
+    ],
+  },
+  {
+    title: "Settling in Costa Rica",
+    steps: [
+      { title: "Finding a Home", isComplete: false },
+      { title: "Understanding the Healthcare System", isComplete: false },
+    ],
+  },
+];
