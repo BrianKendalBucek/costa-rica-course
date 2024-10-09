@@ -46,16 +46,19 @@ const CourseProgress: React.FC<CourseProgressProps> = ({ title, steps }) => {
       {isOpen && (
         <div className={styles.dropdownContent}>
           <div className={styles.progressBarContainer}>
-            <span>COURSE PROGRESS</span>
+            <div className={styles.progressBarInfo}>
+              <span>COURSE PROGRESS</span>
+              <span className={styles.progressInfo}>
+                {progressPercentage}% COMPLETE {completedSteps}/{totalSteps}{" "}
+                STEPS
+              </span>
+            </div>
             <div className={styles.progressBar}>
               <div
                 className={styles.progress}
                 style={{ width: `${progressPercentage}%` }}
               ></div>
             </div>
-            <span className={styles.progressInfo}>
-              {progressPercentage}% COMPLETE {completedSteps}/{totalSteps} STEPS
-            </span>
           </div>
           {/* List of steps */}
           <ul className={styles.stepsList}>
