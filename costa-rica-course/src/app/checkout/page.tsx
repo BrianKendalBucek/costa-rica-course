@@ -18,11 +18,13 @@ const Checkout = () => {
           backgroundPosition="bottom center"
         />
       </div>
-      <div className={styles.container}>
-        <BillingAddress />
-        <PaymentMethod />
-        <OrderReview />
+      <div className={styles.checkoutStructure}>
+        <div className={styles.container}>
+          <BillingAddress />
+          <PaymentMethod />
+        </div>
         <div className={styles.summarySection}>
+          <OrderReview />
           <DiscountSection />
           <BillingSummary />
           <button className={styles.payButton}>Pay $150</button>

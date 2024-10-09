@@ -1,14 +1,23 @@
-.container {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 20px;
+.checkoutStructure {
+  display: flex;
+  justify-content: center;
   padding: 40px;
+  gap: 20px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 560px;
+  
+  }
 
   .summarySection {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+    width: 370px;
+
     .payButton {
       padding: 15px;
       background-color: #0070f3;
@@ -20,5 +29,6 @@
     }
   }
 }
+
 
 
