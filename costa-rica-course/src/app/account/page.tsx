@@ -4,14 +4,15 @@ import styles from "./account.module.scss";
 import { Hero } from "@/components/Hero";
 import CourseProgress from "@/components/CourseProgress";
 import { courses } from "@/constants/constants";
+import MainCourse from "@/components/MainCourse";
 
 const AccountPage = () => {
   return (
     <div className={styles.accountContainer}>
       <div className={styles.hero}>
         <Hero
-          titleOne="MY"
-          titleTwo="ACCOUNT"
+          titleOne="JANE"
+          titleTwo="DOE"
           description=""
           backgroundImage="/images/AccountBackground.png"
           backgroundPosition="bottom center"
@@ -32,6 +33,9 @@ const AccountPage = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className={styles.mainCourseBlock}>
+        <MainCourse />
       </div>
     </div>
   );
