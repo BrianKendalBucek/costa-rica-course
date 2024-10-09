@@ -13,9 +13,11 @@ const OrderReview = () => {
           height={80}
           priority
         />
-        <div>
-          <h4>How to Move to Costa Rica!</h4>
-          <p>Unlock the secrets to a successful expat life in Costa Rica.</p>
+        <div className={styles.descriptionAndPrice}>
+          <div className={styles.headerAndParagraph}>
+            <h4>How to Move to Costa Rica!</h4>
+            <p>Unlock the secrets to a successful expat life in Costa Rica.</p>
+          </div>
           <p className={styles.price}>$199</p>
         </div>
       </div>

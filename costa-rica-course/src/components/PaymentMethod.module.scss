@@ -4,31 +4,37 @@
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.sectionTitle {
-  margin-bottom: 20px;
-}
+  .sectionTitle {
+    margin-bottom: 20px;
+  }
 
-.paymentOptions {
-  display: flex;
-  flex-direction: column;
-}
+  .paymentOptions {
+    display: flex;
+    flex-direction: column;
 
-.paymentOption {
-  margin-bottom: 15px;
-}
+    .paymentOption {
+      margin-bottom: 15px;
 
-.creditCardForm {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+      input {
+        margin-right: 10px;
+      }
+      
+      .creditCardForm {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 
-.input {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  width: 100%;
-  margin-bottom: 10px;
+        .input {
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          width: 100%;
+          box-sizing: border-box;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }
