@@ -1,120 +1,24 @@
-// Container for the entire checkout page layout
 .container {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 20px;
   padding: 40px;
+
+  .summarySection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    .payButton {
+      padding: 15px;
+      background-color: #0070f3;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  }
 }
 
-// Section styling for each form section
-.formSection {
-  background-color: #fff;
-  border: 1px solid #eaeaea;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-// Title for each section
-.sectionTitle {
-  margin-bottom: 20px;
-}
-
-// Form container and input fields
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.input {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.inputRow {
-  display: flex;
-  gap: 10px;
-}
-
-// Payment Options
-.paymentOptions {
-  display: flex;
-  flex-direction: column;
-}
-
-.paymentOption {
-  margin-bottom: 15px;
-}
-
-.creditCardForm {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-// Order Review Section
-.orderReview {
-  background-color: #fff;
-  border: 1px solid #eaeaea;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.orderItem {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.price {
-  font-weight: bold;
-}
-
-// Summary Section
-.summarySection {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.discountSection {
-  background-color: #fff;
-  border: 1px solid #eaeaea;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.billingSummary {
-  background-color: #fff;
-  border: 1px solid #eaeaea;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.summaryItem {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.total {
-  font-weight: bold;
-}
-
-// Pay Button
-.payButton {
-  padding: 15px;
-  background-color: #0070f3;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 18px;
-}

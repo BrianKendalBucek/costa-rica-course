@@ -8,8 +8,8 @@ import BillingSummary from "@/components/BillingSummary";
 
 const Checkout = () => {
   return (
-    <div className={styles.checkoutContainer}>
-      <div className={styles.hero}>
+    <div>
+      <div>
         <Hero
           titleOne="CHECKOUT"
           titleTwo="PROCESS"
@@ -22,7 +22,6 @@ const Checkout = () => {
         <BillingAddress />
         <PaymentMethod />
         <OrderReview />
-
         <div className={styles.summarySection}>
           <DiscountSection />
           <BillingSummary />

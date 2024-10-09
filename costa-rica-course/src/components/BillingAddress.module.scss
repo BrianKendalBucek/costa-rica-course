@@ -4,18 +4,22 @@
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .sectionTitle {
+    margin-bottom: 20px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
-// Title for each section
-.sectionTitle {
-  margin-bottom: 20px;
-}
-
-// Form container and input fields
-.form {
+.inputRow {
   display: flex;
-  flex-direction: column;
   gap: 10px;
+
 }
 
 .input {
@@ -24,9 +28,4 @@
   border-radius: 4px;
   width: 100%;
   margin-bottom: 10px;
-}
-
-.inputRow {
-  display: flex;
-  gap: 10px;
 }
