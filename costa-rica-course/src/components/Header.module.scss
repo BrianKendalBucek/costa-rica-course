@@ -1,64 +1,50 @@
 .header {
   display: flex;
   justify-content: space-between;
-  // justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
-
-  // color
   background-color: white;
   border-bottom: 2px solid grey;
   color: black;
 
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+  .navList {
+    display: flex;
+    align-items: center;
 
-  nav {
-    ul {
-      list-style: none;
-      display: flex;
-      gap: 40px;
-      margin: 0;
+    @media (max-width: 1380px) {
+      display: none;
+      position: absolute;
+      z-index: 10;
+      top: 90px;
+      right: 0;
+      background-color: white;
+      width: 11%;
+      text-align: center;
+      // flex-direction: column;
+      padding: 20px;
+      // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 4px 4px;
+      border: 2px solid grey; /* Apply border to all sides */
+      border-top: none;
+      border-right: none;
+      // transition: transform 0.3s ease, opacity 0.3s ease;
+      // transform: translateY(-100%);
+      // opacity: 0;
 
-      li {
-        a {
-          color: black;
-          text-decoration: none;
-          font-size: 25px;
-          &:hover {
-            color: #0070f3;
-          }
-        }
+      &.open {
+        display: flex;
+        // transform: translateY(0); /* Slide down */
+        // opacity: 1; /* Make menu visible */
       }
     }
   }
 
-  .loginButton {
+  .hamburgerIcon {
+    display: none;
+    cursor: pointer;
 
-    a {
-      text-decoration: none;
-    }
-    
-    button {
-      padding: 10px 10px;
-      border-radius: 25px;
-      border: none;
-      background-color: orange;
-      color: white;
-      font-weight: 800;
-
-      display: flex;
-      gap: 10px;
+    @media (max-width: 1380px) {
+      display: block; /* Show hamburger icon on smaller screens */
     }
   }
-}
-
-
-@media (max-width: 768px) {
-  // body {
-  //   font-size: 14px;
-  //   background-color: lightgray;
-  // }
 }

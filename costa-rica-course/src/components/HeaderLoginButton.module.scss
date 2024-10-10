@@ -1,0 +1,17 @@
+.loginButton {
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    padding: 10px 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: 800;
+
+    display: flex;
+    gap: 10px;
+  }
+}
