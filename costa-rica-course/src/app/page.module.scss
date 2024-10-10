@@ -83,6 +83,13 @@ $text-color: #333;
       }
     }
 
+    .instructorContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
     .studentsContainer {
       width: 100%;
       display: flex;

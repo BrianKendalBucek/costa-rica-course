@@ -18,10 +18,10 @@ export const images = [
 
 export const instructors = [
   {
-    name: 'Mrs. Jane Doe',
-    title: 'INSTRUCTOR SPOTLIGHT',
-    alt: 'Jane Doe',
     src: '/images/Ellipse 10.png',
+    title: 'INSTRUCTOR SPOTLIGHT',
+    name: 'Mrs. Jane Doe',
+    alt: 'Jane Doe',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque.',
     socials: {
       facebook: 'https://facebook.com/janedoe',
@@ -30,10 +30,10 @@ export const instructors = [
     },
   },
   {
-    name: 'Mr. John Doe',
-    title: 'INSTRUCTOR SPOTLIGHT',
-    alt: 'John Doe',
     src: '/images/Ellipse 10 (1).png',
+    title: 'INSTRUCTOR SPOTLIGHT',
+    name: 'Mr. John Doe',
+    alt: 'John Doe',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque.',
     socials: {
       facebook: 'https://facebook.com/johndoe',
@@ -42,10 +42,10 @@ export const instructors = [
     },
   },
   {
-    name: 'Mrs. Janis Doe',
-    title: 'INSTRUCTOR SPOTLIGHT',
-    alt: 'Janis Doe',
     src: '/images/Ellipse 10 (2).png',
+    title: 'INSTRUCTOR SPOTLIGHT',
+    name: 'Mrs. Janis Doe',
+    alt: 'Janis Doe',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque.',
     socials: {
       facebook: 'https://facebook.com/janisdoe',
@@ -53,6 +53,78 @@ export const instructors = [
       linkedin: 'https://linkedin.com/in/janisdoe',
     },
   },
+  // {
+  //   image: '/images/Ellipse 10.png',
+  //   title: 'INSTRUCTOR SPOTLIGHT',
+  //   name: 'Mrs. Jane Doe',
+  //   alt: 'Jane Doe',
+  //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque.',
+  //   socials: {
+  //     facebook: 'https://facebook.com/janedoe',
+  //     twitter: 'https://twitter.com/janedoe',
+  //     linkedin: 'https://linkedin.com/in/janedoe',
+  //   },
+  // },
+  // {
+  //   image: '/images/Ellipse 10 (1).png',
+  //   title: 'INSTRUCTOR SPOTLIGHT',
+  //   name: 'Mr. John Doe',
+  //   alt: 'John Doe',
+  //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque.',
+  //   socials: {
+  //     facebook: 'https://facebook.com/johndoe',
+  //     twitter: 'https://twitter.com/johndoe',
+  //     linkedin: 'https://linkedin.com/in/johndoe',
+  //   },
+  // },
+  // {
+  //   image: '/images/Ellipse 10 (2).png',
+  //   title: 'INSTRUCTOR SPOTLIGHT',
+  //   name: 'Mrs. Janis Doe',
+  //   alt: 'Janis Doe',
+  //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque.',
+  //   socials: {
+  //     facebook: 'https://facebook.com/janisdoe',
+  //     twitter: 'https://twitter.com/janisdoe',
+  //     linkedin: 'https://linkedin.com/in/janisdoe',
+  //   },
+  // },
+  // {
+  //   image: '/images/Ellipse 10.png',
+  //   title: 'INSTRUCTOR SPOTLIGHT',
+  //   name: 'Mrs. Jane Doe',
+  //   alt: 'Jane Doe',
+  //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque.',
+  //   socials: {
+  //     facebook: 'https://facebook.com/janedoe',
+  //     twitter: 'https://twitter.com/janedoe',
+  //     linkedin: 'https://linkedin.com/in/janedoe',
+  //   },
+  // },
+  // {
+  //   image: '/images/Ellipse 10 (1).png',
+  //   title: 'INSTRUCTOR SPOTLIGHT',
+  //   name: 'Mr. John Doe',
+  //   alt: 'John Doe',
+  //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque.',
+  //   socials: {
+  //     facebook: 'https://facebook.com/johndoe',
+  //     twitter: 'https://twitter.com/johndoe',
+  //     linkedin: 'https://linkedin.com/in/johndoe',
+  //   },
+  // },
+  // {
+  //   image: '/images/Ellipse 10 (2).png',
+  //   title: 'INSTRUCTOR SPOTLIGHT',
+  //   name: 'Mrs. Janis Doe',
+  //   alt: 'Janis Doe',
+  //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit mauris eget sem imperdiet scelerisque.',
+  //   socials: {
+  //     facebook: 'https://facebook.com/janisdoe',
+  //     twitter: 'https://twitter.com/janisdoe',
+  //     linkedin: 'https://linkedin.com/in/janisdoe',
+  //   },
+  // },
 ];
 
 export const steps = [

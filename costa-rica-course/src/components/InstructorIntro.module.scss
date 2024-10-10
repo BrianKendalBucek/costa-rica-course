@@ -1,0 +1,56 @@
+.instructorsContainer {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  // justify-content: center;
+  // margin-top: 20px;
+  // gap: 30px;
+
+  // @media (max-width: 1120px) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+
+  .instructor {
+    border-radius: 4.37px;
+    width: 331.96px;
+    height: 431.86px;
+    box-shadow: 5.46px 6.55px 23.7px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .instructorImage {
+        padding-top: 30.85px;
+    }
+
+    .instructorDiscription {
+      width: 231.5px;
+      text-align: justify;
+      padding-top: 30.85px;
+
+    }
+
+    .socialLinksContainer {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .facebook {
+      font-size: 20px;
+      color: #3B5998;
+    }
+
+    .xtwitter {
+      font-size: 20px;
+    }
+
+    .linkedin {
+      font-size: 20px;
+      color: #0077B5;
+    }
+  }
+}

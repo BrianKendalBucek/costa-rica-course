@@ -22,6 +22,7 @@ interface CarouselProps<T> {
   slidesPerView?: number;
   spaceBetween?: number;
   loop?: boolean;
+  autoplay?: boolean;
   autoplayDelay?: number;
   effect?: "coverflow" | "slide" | "fade" | "cube";
 }
@@ -30,8 +31,9 @@ const Carousel = <T,>({
   data,
   renderSlide,
   slidesPerView = 3,
-  spaceBetween = 50,
+  spaceBetween = 0,
   loop = true,
+  autoplay = true,
   autoplayDelay = 3000,
   effect = "slide",
 }: CarouselProps<T>) => {
@@ -47,11 +49,13 @@ const Carousel = <T,>({
         spaceBetween={spaceBetween}
         slidesPerView={slidesPerView}
         loop={loop}
-        autoplay={{ delay: autoplayDelay }}
+        autoplay={autoplay ? { delay: autoplayDelay } : false}
         pagination={{ clickable: true }}
         navigation={true}
         effect={effect}
         centeredSlides={true}
+        initialSlide={2}
+        centerInsufficientSlides={true}
         grabCursor={true}
         modules={modules} // Use the dynamic modules array
         coverflowEffect={
