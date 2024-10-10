@@ -24,6 +24,7 @@ interface CarouselProps<T> {
   loop?: boolean;
   autoplay?: boolean;
   autoplayDelay?: number;
+  centeredSlides?: boolean;
   effect?: "coverflow" | "slide" | "fade" | "cube";
 }
 
@@ -36,6 +37,7 @@ const Carousel = <T,>({
   autoplay = true,
   autoplayDelay = 3000,
   effect = "slide",
+  centeredSlides=false
 }: CarouselProps<T>) => {
   const modules = [Navigation, Pagination, Autoplay, EffectFade];
   if (effect === "coverflow") {
@@ -57,7 +59,10 @@ const Carousel = <T,>({
         initialSlide={2}
         centerInsufficientSlides={true}
         grabCursor={true}
-        modules={modules} // Use the dynamic modules array
+        modules={modules}
+        onResize={(swiper) => {
+          swiper.update(); // Force Swiper to update on resize
+        }} 
         coverflowEffect={
           effect === "coverflow"
             ? {
