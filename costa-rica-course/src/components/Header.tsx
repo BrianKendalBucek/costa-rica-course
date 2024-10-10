@@ -17,6 +17,7 @@ const Header: React.FC = () => {
           />
         </Link>
       </div>
+      
       <nav>
         <ul>
           <li>

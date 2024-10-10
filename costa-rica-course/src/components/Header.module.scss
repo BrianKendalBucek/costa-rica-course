@@ -1,8 +1,11 @@
 .header {
   display: flex;
   justify-content: space-between;
+  // justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
+
+  // color
   background-color: white;
   border-bottom: 2px solid grey;
   color: black;
@@ -16,7 +19,7 @@
     ul {
       list-style: none;
       display: flex;
-      gap: 15rem;
+      gap: 40px;
       margin: 0;
 
       li {
@@ -50,4 +53,12 @@
       gap: 10px;
     }
   }
+}
+
+
+@media (max-width: 768px) {
+  // body {
+  //   font-size: 14px;
+  //   background-color: lightgray;
+  // }
 }

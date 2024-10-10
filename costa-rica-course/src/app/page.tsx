@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import styles from "./page.module.scss";
 import { Instructor } from "@/components/Instructor";
 import { ThreeSteps } from "@/components/ThreeSteps";
@@ -8,6 +10,14 @@ import MainCourse from "@/components/MainCourse";
 import GoalVisual from "@/components/GoalVisual";
 
 const HomePage: React.FC = () => {
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
       <main className={styles.main}>
@@ -24,10 +34,11 @@ const HomePage: React.FC = () => {
               BEGIN THE ADVENTURE &gt;
             </button>
           </div>
-          <Courses />
+          {windowWidth > 1661 && <Courses />}
         </section>
 
         <section className={styles.contentGrid}>
+          {windowWidth <= 1661 && <Courses />}
           <GoalVisual />
           <Instructor />
           <ThreeSteps />
