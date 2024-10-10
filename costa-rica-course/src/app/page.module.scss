@@ -2,7 +2,6 @@ $text-color: #333;
 
 .main {
   .hero {
-    padding: 2rem;
     height: 746px;
     width: auto;
     background-image: url("/images/Rectangle 10 (7).png");
@@ -15,15 +14,25 @@ $text-color: #333;
     padding-right: 100px;
 
     @media (max-width: 1661px) {
-      .courses {
-        display: none;
-      }
+      padding-right: 0; // Directly target .hero's padding-right property
+      justify-content: center;
+    }
+
+    @media (max-width: 1661px) {
+      // .courses {
+      //   display: none;
+      // }
     }
 
     .titleContainer {
       height: 400px;
       width: 370px;
       margin-left: 60px;
+
+      @media (max-width: 1661px) {
+        margin: 0;
+        text-align: center;
+      }
     }
 
     .title {
@@ -43,6 +52,10 @@ $text-color: #333;
     .titleDescription {
       color: white;
       text-align: justify;
+
+      @media (max-width: 1661px) {
+        text-align: center;
+      }
     }
 
     .titleButton {
