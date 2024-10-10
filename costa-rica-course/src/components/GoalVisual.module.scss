@@ -18,4 +18,11 @@
   margin-top: 50px;
   overflow: hidden;
   box-sizing: border-box;
+
+  @media (max-width: 1300px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
 }
