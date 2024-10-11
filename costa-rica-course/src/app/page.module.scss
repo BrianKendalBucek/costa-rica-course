@@ -84,12 +84,17 @@ $text-color: #333;
     }
 
     .instructorContainer {
-      width: 50%;
+      // width: 50%;
+      width: 1300px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       box-sizing: border-box;
+
+      @media (max-width: 1330px) {
+        width: 1000px
+      }
     }
 
     .studentsContainer {

@@ -7,17 +7,18 @@ import InstructorIntro from './InstructorIntro';
 
 const InstructorIntroCarousel = () => {
   const [intros, setIntros] = useState([]);
-  const [slidesPerView, setSlidesPerView] = useState(3); // Set default to 3
-  const [centeredSlides, setCenteredSlides] = useState(false);
+  const [slidesPerView, setSlidesPerView] = useState(3);
 
   // Function to update the slidesPerView based on window width
   const handleResize = () => {
-    if (window.innerWidth <= 1386) {
-      setSlidesPerView(1); // Show 1 slide for smaller screens
-      setCenteredSlides(false); // Disable centeredSlides for small screens
+    const width = window.innerWidth;
+
+    if (width <= 600) {
+      setSlidesPerView(1);
+    } else if (width > 600 && width <= 1330) {
+      setSlidesPerView(2);
     } else {
-      setSlidesPerView(3); // Show 3 slides for larger screens
-      setCenteredSlides(true); // Enable centeredSlides for larger screens
+      setSlidesPerView(3); 
     }
   };
   
@@ -40,10 +41,9 @@ const InstructorIntroCarousel = () => {
   return (
     <Carousel
       data={intros}
-      slidesPerView={Math.min(3, intros.length)}
+      slidesPerView={slidesPerView}
       // autoplay={true}
       // autoplay={false}
-      // centeredSlides={centeredSlides}
       renderSlide={(intro) => (
         <InstructorIntro
           key={intro.title}

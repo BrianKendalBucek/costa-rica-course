@@ -1,16 +1,16 @@
 export const images = [
   {
-    image: "/images/Rectangle 2775 (1).png",
+    src: "/images/GoalVisual 1.png",
     alt: "Find Your Pura Vida",
     overlayText: "Find Your Pura Vida"
   },
   {
-    src: "/images/Rectangle 2776 (1).png",
+    src: "/images/GoalVisual 2.png",
     alt: "Retire in Costa Rica",
     overlayText: "Retire in Costa Rica"
   },
   {
-    src: "/images/Rectangle 2777 (1).png",
+    src: "/images/GoalVisual 3.png",
     alt: "Find Your Freedom",
     overlayText: "Find Your Freedom"
   }
