@@ -42,6 +42,9 @@ const HeaderList = () => {
           <li>
             <Link href="/checkout">Checkout</Link>
           </li>
+          <li>
+            <Link href="/test">Test</Link>
+          </li>
           {/* Conditionally render the /login link if in mobile view */}
           {isMobileView && (
             <li>

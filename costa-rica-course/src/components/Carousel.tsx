@@ -62,7 +62,7 @@ const Carousel = <T,>({
         modules={modules}
         onResize={(swiper) => {
           swiper.update(); // Force Swiper to update on resize
-        }} 
+        }}
         coverflowEffect={
           effect === "coverflow"
             ? {

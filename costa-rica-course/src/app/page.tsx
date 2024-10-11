@@ -40,9 +40,9 @@ const HomePage: React.FC = () => {
         <section className={styles.contentGrid}>
           {windowWidth <= 1661 && <Courses />}
           <GoalVisual />
-          <div className={styles.instructorContainer}>
-            <Instructor />
-          </div>
+          {/* <div className={styles.instructorContainer}> */}
+          <Instructor />
+          {/* </div> */}
           <ThreeSteps />
           <MainCourse />
           <div className={styles.studentsContainer}>
