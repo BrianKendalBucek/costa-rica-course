@@ -1,5 +1,3 @@
-import "./about.module.scss";
-
 import React from "react";
 import styles from "./about.module.scss";
 import { Instructor } from "@/components/Instructor";
@@ -62,7 +60,10 @@ const AboutPage = () => {
         </div>
       </div>
       <Stats />
-      <Instructor />
+      {/* <Instructor /> */}
+      <div className={styles.instructorContainer}>
+        <Instructor />
+      </div>
       <Students />
     </div>
   );
