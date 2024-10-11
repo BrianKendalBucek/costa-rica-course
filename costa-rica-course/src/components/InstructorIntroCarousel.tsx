@@ -16,7 +16,7 @@ const InstructorIntroCarousel = () => {
     if (width <= 600) {
       setSlidesPerView(1);
     } else if (width > 600 && width <= 1330) {
-      setSlidesPerView(2);
+      setSlidesPerView(1);
     } else {
       setSlidesPerView(3); 
     }
@@ -37,6 +37,7 @@ const InstructorIntroCarousel = () => {
 
   if (intros.length === 0) return <div>Loading intros...</div>;
 
+  console.log("slidesPerView", slidesPerView)
 
   return (
     <Carousel
