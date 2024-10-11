@@ -39,6 +39,7 @@ export default function ResponsiveCarousel() {
       autoPlaySpeed={1000}
       keyBoardControl={true}
       customTransition="all .5"
+      // centerMode={true}
       transitionDuration={500}
       containerClass="carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}

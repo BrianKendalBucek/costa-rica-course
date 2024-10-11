@@ -54,7 +54,7 @@ export const instructors = [
     },
   },
   {
-    image: '/images/Ellipse 10.png',
+    src: '/images/Ellipse 10.png',
     title: 'INSTRUCTOR SPOTLIGHT',
     name: 'Mrs. Jane Doe',
     alt: 'Jane Doe',
@@ -66,7 +66,7 @@ export const instructors = [
     },
   },
   {
-    image: '/images/Ellipse 10 (1).png',
+    src: '/images/Ellipse 10 (1).png',
     title: 'INSTRUCTOR SPOTLIGHT',
     name: 'Mr. John Doe',
     alt: 'John Doe',
