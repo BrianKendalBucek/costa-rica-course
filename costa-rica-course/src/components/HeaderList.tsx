@@ -28,13 +28,13 @@ const HeaderList = () => {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About Us</Link>
+            <Link href="/about">About</Link>
           </li>
           <li>
             <Link href="/courses">Courses</Link>
           </li>
           <li>
-            <Link href="/contact">Contact Us</Link>
+            <Link href="/contact">Contact</Link>
           </li>
           <li>
             <Link href="/account">Account</Link>
@@ -45,7 +45,6 @@ const HeaderList = () => {
           <li>
             <Link href="/test">Test</Link>
           </li>
-          {/* Conditionally render the /login link if in mobile view */}
           {isMobileView && (
             <li>
               <Link href="/login">Login</Link>

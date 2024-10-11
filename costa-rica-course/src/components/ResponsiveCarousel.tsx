@@ -15,15 +15,15 @@ export default function ResponsiveCarousel() {
       items: 5,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 2145 },
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 2145, min: 1430 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 1430, min: 0 },
       items: 1,
     },
   };
@@ -42,15 +42,11 @@ export default function ResponsiveCarousel() {
       // centerMode={true}
       transitionDuration={500}
       containerClass="carousel-container"
-      removeArrowOnDeviceType={["tablet", "mobile"]}
+      // removeArrowOnDeviceType={["mobile"]}
       // deviceType={this.props.deviceType}
       dotListClass="custom-dot-list-style"
       itemClass="carousel-item-padding-40-px"
     >
-      {/* <div>Item 1</div>
-      <div>Item 2</div>
-      <div>Item 3</div>
-      <div>Item 4</div> */}
       {instructors.map((instructor) => (
         <InstructorIntro key={instructor.name} instructor={instructor} />
       ))}
