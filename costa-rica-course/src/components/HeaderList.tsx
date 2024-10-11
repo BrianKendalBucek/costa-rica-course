@@ -42,9 +42,9 @@ const HeaderList = () => {
           <li>
             <Link href="/checkout">Checkout</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/test">Test</Link>
-          </li>
+          </li> */}
           {isMobileView && (
             <li>
               <Link href="/login">Login</Link>
