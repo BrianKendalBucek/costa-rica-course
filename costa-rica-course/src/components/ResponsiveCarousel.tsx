@@ -48,7 +48,15 @@ export default function ResponsiveCarousel() {
       itemClass="carousel-item-padding-40-px"
     >
       {instructors.map((instructor) => (
-        <InstructorIntro key={instructor.name} instructor={instructor} />
+        <InstructorIntro
+          key={instructor.name}
+          image={instructor.image}
+          title={instructor.title}
+          name={instructor.name}
+          alt={instructor.alt}
+          description={instructor.description}
+          socials={instructor.socials}
+        />
       ))}
     </Carousel>
   );

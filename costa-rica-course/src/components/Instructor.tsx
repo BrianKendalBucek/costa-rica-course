@@ -1,5 +1,6 @@
 import styles from "./Instructor.module.scss";
 import ResponsiveCarousel from "./ResponsiveCarousel";
+import InstructorIntroCarousel from "./InstructorIntroCarousel";
 
 export const Instructor = () => (
   <div className={styles.card}>
@@ -8,6 +9,7 @@ export const Instructor = () => (
       Meet out lead instructors: experts committed to guiding your learning
       journey with passion and precision.
     </p>
-    <ResponsiveCarousel />
+    {/* <ResponsiveCarousel /> */}
+    <InstructorIntroCarousel />
   </div>
 );

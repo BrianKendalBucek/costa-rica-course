@@ -8,35 +8,35 @@ import {
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import styles from "./InstructorIntro.module.scss";
 
-const InstructorIntro = ({ instructor }) => {
+const InstructorIntro = ({ image, title, name, alt, description, socials }) => {
   return (
     <div className={styles.instructorsContainer}>
       <div className={styles.instructor}>
         <Image
-          src={instructor.src}
-          alt={instructor.alt}
+          src={image}
+          alt={alt}
           width={128.85}
           height={128.85}
           priority
           className={styles.instructorImage}
         />
         <div>
-          <h3>{instructor.name}</h3>
-          <h4>{instructor.title}</h4>
-          <p className={styles.instructorDiscription}>{instructor.description}</p>
+          <h3>{name}</h3>
+          <h4>{title}</h4>
+          <p className={styles.instructorDiscription}>{description}</p>
           <div className={styles.socialLinksContainer}>
             <a
-              href={instructor.socials.facebook}
+              href={socials.facebook}
               target="_blank"
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faFacebook} className={styles.facebook} />
             </a>
-            <a href={instructor.socials.twitter} target="_blank" rel="noopener noreferrer">
+            <a href={socials.twitter} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faXTwitter} className={styles.xtwitter} />
             </a>
             <a
-              href={instructor.socials.linkedin}
+              href={socials.linkedin}
               target="_blank"
               rel="noopener noreferrer"
             >
