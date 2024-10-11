@@ -37,8 +37,6 @@ const InstructorIntroCarousel = () => {
 
   if (intros.length === 0) return <div>Loading intros...</div>;
 
-  console.log("slidesPerView", slidesPerView)
-
   return (
     <Carousel
       data={intros}
