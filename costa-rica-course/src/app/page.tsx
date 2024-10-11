@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Suspense } from "react";
 import styles from "./page.module.scss";
 import { Instructor } from "@/components/Instructor";
 import { ThreeSteps } from "@/components/ThreeSteps";
@@ -9,21 +8,14 @@ import { Students } from "@/components/Students";
 import { Courses } from "@/components/Courses";
 import MainCourse from "@/components/MainCourse";
 import GoalVisual from "@/components/GoalVisual";
-import ResponsiveCarousel from "@/components/ResponsiveCarousel";
 
 const HomePage: React.FC = () => {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
-
-  const [showCarousel, setShowCarousel] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  useEffect(() => {
-    setShowCarousel(true);
   }, []);
 
   return (
@@ -50,17 +42,11 @@ const HomePage: React.FC = () => {
           <GoalVisual />
           <div className={styles.instructorContainer}>
             <Instructor />
-            {/* <Suspense>
-              <ResponsiveCarousel />
-              </Suspense>
-              {showCarousel && <ResponsiveCarousel />} */}
           </div>
           <ThreeSteps />
           <MainCourse />
           <div className={styles.studentsContainer}>
             <Students />
-            {/* <Instructor /> */}
-            {/* <ResponsiveCarousel /> */}
           </div>
         </section>
       </main>

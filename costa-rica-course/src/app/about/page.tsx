@@ -6,7 +6,6 @@ import { Instructor } from "@/components/Instructor";
 import { Students } from "@/components/Students";
 import { Stats } from "@/components/Stats";
 import { Hero } from "@/components/Hero";
-import ResponsiveCarousel from "@/components/ResponsiveCarousel";
 
 const AboutPage = () => {
   return (
@@ -63,8 +62,7 @@ const AboutPage = () => {
         </div>
       </div>
       <Stats />
-      {/* <Instructor /> */}
-      <ResponsiveCarousel />
+      <Instructor />
       <Students />
     </div>
   );

@@ -1,12 +1,12 @@
-import { Instructor } from '@/components/Instructor';
-import styles from './test.module.scss';
-import ResponsiveCarousel from '@/components/ResponsiveCarousel';
+// import { Instructor } from '@/components/Instructor';
+// import styles from './test.module.scss';
+// import ResponsiveCarousel from '@/components/ResponsiveCarousel';
 
 const Test = () => {
   return (
     <div>
-      <Instructor />
-      <ResponsiveCarousel />
+      {/* <Instructor />
+      <ResponsiveCarousel /> */}
     </div>
   );
 };
