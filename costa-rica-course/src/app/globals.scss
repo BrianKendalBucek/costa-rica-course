@@ -40,11 +40,13 @@ p {
   // overflow: unset !important; /* Apply unset and use !important to override */
   // margin: 50px !important;
   padding: 70px !important; 
+  // display: flex !important;
+  // justify-content: center !important;
 }
 
-.slick-track {
-  margin: 0 !important;
-}
+// .slick-track {
+//   margin: 0 !important;
+// }
 
 // .swiper swiper-initialized swiper-horizontal swiper-backface-hidden
 

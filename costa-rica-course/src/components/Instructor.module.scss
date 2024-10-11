@@ -1,15 +1,26 @@
 
 .card {
+  // width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // // width: 415px;
+  // text-align: center;
+  // margin-top: 50px;
+  // // box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  // width: 415px;
+  justify-content: center;
   text-align: center;
-  margin-top: 50px;
+  // align-items: center;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  box-sizing: border-box;
 
   .intro {
-    width: 456px;
     margin-bottom: 20px;
+    text-align: center;
+    // width: 456px;
   }
 }
