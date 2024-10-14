@@ -19,6 +19,11 @@
     padding: 90px;
   }
 
+  @media (max-width: 455px) {
+    height: auto;
+    padding: 90px 10px;
+  }
+
   .threeStepsTitle {
     display: flex;
     gap: 5px;

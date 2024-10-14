@@ -43,6 +43,8 @@ p {
 
   @media (max-width: 515px) {
     padding: 0 !important;
+    // display: flex !important;
+    // justify-content: center !important;
   }
 }
 
@@ -57,6 +59,10 @@ p {
   justify-content: center !important;
 }
 
-// .coverflow-carousel .swiper-slide {
-//   /* You can define specific styles here if needed for the coverflow */
-// }
+.coverflow-carousel .swiper-slide {
+  @media (max-width: 1070px) {
+    // padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
