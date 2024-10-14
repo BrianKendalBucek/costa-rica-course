@@ -87,10 +87,14 @@ $text-color: #333;
     align-items: center;
     width: 100%;
 
-    @media (min-width: 1662px) {
-      .courses {
-        display: none;
-      }
+    // @media (min-width: 1662px) {
+    //   .courses {
+    //     display: none;
+    //   }
+    // }
+
+    @media (max-width: 1662px) {
+      margin-top: 50px;
     }
 
     .instructorContainer {
