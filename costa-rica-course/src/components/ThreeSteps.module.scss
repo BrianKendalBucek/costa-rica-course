@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('/images/Rectangle 2773 (2).png');
+  background-image: url("/images/Rectangle 2773 (2).png");
   height: 463px;
   // width: 100vw;
   width: 100%;
@@ -26,14 +26,17 @@
     h2 {
       margin: 0;
       font-size: 46px;
+
+      @media (max-width: 715px) {
+        font-size: 24px;
+      }
     }
 
     .plus {
       color: orange;
     }
-
   }
-  
+
   .threeStepsSteps {
     display: flex;
     margin-top: 40px;
@@ -51,12 +54,19 @@
         font-size: 80px;
         font-weight: 200;
         text-align: left;
+
+        @media (max-width: 715px) {
+          font-size: 50px;
+        }
       }
-      
+
       .threeStepDescription {
         width: 255px;
         text-align: justify;
 
+        @media (max-width: 715px) {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -66,5 +76,9 @@
     justify-content: center;
     font-size: 26px;
     font-weight: 500;
+
+    @media (max-width: 715px) {
+      font-size: 24px;
+    }
   }
 }
