@@ -1,26 +1,27 @@
 .card {
   height: 522.1px;
   width: 327.06px;
-  // border: 1px solid grey;
   border-radius: 4px;
-  // background-color: #F3F3F3;
   background-color: white;
   padding: 12px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  .upperSection {
+  @media (max-width: 1070px) {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
+  .upperSection {
     img {
       border-radius: 4px;
     }
-  
+
     h3 {
       font-size: 20px;
       font-weight: 700;
     }
-  
+
     p {
       // padding: 10px;
       margin: 20px;
@@ -28,7 +29,6 @@
       font-size: 13.27px;
     }
   }
-
 
   .priceAndButton {
     display: flex;
@@ -42,11 +42,10 @@
 
       .priceOld {
         text-decoration: line-through;
-        color: #7F7F7F;
+        color: #7f7f7f;
         font-size: 19.76px;
         font-weight: 500;
         margin: 0;
-
       }
 
       .priceNew {

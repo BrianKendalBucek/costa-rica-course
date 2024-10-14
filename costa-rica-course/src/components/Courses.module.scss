@@ -2,5 +2,12 @@
   // width: 754.87px;
   width: 1000px;
   text-align: center;
-  border-inline: 2px solid #a1cdbb;
+  // border-inline: 2px solid #a1cdbb;
+  box-shadow: 
+    -10px 0 15px -5px rgba(161, 205, 187, 0.5), /* Left side */
+    10px 0 15px -5px rgba(161, 205, 187, 0.5); 
+
+  @media (max-width: 1070px) {
+    width: 80%;
+  }
 }

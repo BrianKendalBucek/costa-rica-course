@@ -26,23 +26,29 @@ interface CarouselProps<T> {
   autoplayDelay?: number;
   centeredSlides?: boolean;
   effect?: "coverflow" | "slide" | "fade" | "cube";
+  modifierNumber?: number;
 }
 
 const Carousel = <T,>({
   data,
   renderSlide,
-  slidesPerView = 3,
+  slidesPerView,
   spaceBetween = 0,
   loop = true,
   autoplay = true,
   autoplayDelay = 3000,
   effect = "slide",
   centeredSlides = false,
+  modifierNumber,
 }: CarouselProps<T>) => {
   const modules = [Navigation, Pagination, Autoplay, EffectFade];
+  
   if (effect === "coverflow") {
     modules.push(EffectCoverflow);
   }
+
+  console.log("modifierNumber", modifierNumber);
+
 
   return (
     <div>
@@ -68,7 +74,7 @@ const Carousel = <T,>({
               rotate: 0,
               stretch: 0,
               depth: 200,
-              modifier: 1,
+              modifier: modifierNumber,
               slideShadows: true,
             }
             : undefined

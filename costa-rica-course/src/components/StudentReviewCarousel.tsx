@@ -9,7 +9,6 @@ const StudentReviewCarousel: React.FC = () => {
   const [reviews, setReviews] = useState<typeof studentReviews>([]);
   const [slidesPerView, setSlidesPerView] = useState(3);
 
-  // Function to update the slidesPerView based on window width
   const handleResize = () => {
     const width = window.innerWidth;
 
