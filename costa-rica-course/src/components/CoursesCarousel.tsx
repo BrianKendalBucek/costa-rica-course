@@ -17,13 +17,18 @@ const CourseCarousel: React.FC = () => {
     const handleResize = () => {
       const width = window.innerWidth;
 
-      if (width <= 1070) {
+      if (width <= 840) {
         setSlidesPerView(1);
+        setModifierNumber(0);
+      } else if (width > 840 && width <= 1070) {
+        setSlidesPerView(2);
         setModifierNumber(0);
       } else if (width > 1070) {
         setSlidesPerView(3);
         setModifierNumber(1);
       }
+      
+        
     };
 
     handleResize();
