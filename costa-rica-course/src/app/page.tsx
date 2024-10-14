@@ -39,11 +39,11 @@ const HomePage: React.FC = () => {
 
         <section className={styles.contentGrid}>
           {windowWidth <= 1661 && <Courses />}
-          <GoalVisual />
+          {/* <GoalVisual /> */}
           <div className={styles.instructorContainer}>
-            <Instructor />
+            {/* <Instructor /> */}
           </div>
-          <ThreeSteps />
+          {/* <ThreeSteps /> */}
           <MainCourse />
           <div className={styles.studentsContainer}>
             <Students />
