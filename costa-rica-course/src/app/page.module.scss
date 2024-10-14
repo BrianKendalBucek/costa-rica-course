@@ -37,6 +37,10 @@ $text-color: #333;
       font-weight: 400;
       color: white;
       margin: 0;
+
+      @media (max-width: 475px) {
+        font-size: 50px;
+      }
     }
 
     .title2 {
@@ -44,6 +48,10 @@ $text-color: #333;
       font-weight: 700;
       color: #a1cdbb;
       margin: 0;
+
+      @media (max-width: 475px) {
+        font-size: 50px;
+      }
     }
 
     .titleDescription {
@@ -52,6 +60,11 @@ $text-color: #333;
 
       @media (max-width: 1661px) {
         text-align: center;
+      }
+
+      @media (max-width: 475px) {
+        font-size: 14px;
+        padding-top: 10px;
       }
     }
 
