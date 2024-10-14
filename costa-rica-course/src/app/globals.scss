@@ -39,7 +39,7 @@ p {
 .swiper {
   // overflow: unset !important; /* Apply unset and use !important to override */
   // margin: 50px !important;
-  padding: 70px !important; 
+  padding: 0 70px !important; 
 
   @media (max-width: 515px) {
     padding: 0 !important;

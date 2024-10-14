@@ -9,9 +9,15 @@
   box-sizing: border-box;
 
   .intro {
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 0 10px;
-    // max-width: 456px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    p {
+      // margin-bottom: 10px;
+      text-align: center;
+      padding: 0 10px;
+      max-width: 456px;
+    }
   }
 }
