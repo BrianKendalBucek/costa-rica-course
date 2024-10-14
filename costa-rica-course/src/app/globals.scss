@@ -42,8 +42,18 @@ p {
   padding: 70px !important; 
 }
 
-.swiper-slide {
+// .swiper-slide {
+//   display: flex !important;
+//   justify-content: center !important;
+// }
+
+/* For regular carousel */
+.regular-carousel .swiper-slide {
   display: flex !important;
   justify-content: center !important;
 }
 
+/* No additional styles for the coverflow carousel, allowing it to behave normally */
+.coverflow-carousel .swiper-slide {
+  /* You can define specific styles here if needed for the coverflow */
+}

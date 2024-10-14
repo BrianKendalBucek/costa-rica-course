@@ -37,7 +37,7 @@ const Carousel = <T,>({
   autoplay = true,
   autoplayDelay = 3000,
   effect = "slide",
-  centeredSlides=false
+  centeredSlides = false,
 }: CarouselProps<T>) => {
   const modules = [Navigation, Pagination, Autoplay, EffectFade];
   if (effect === "coverflow") {
@@ -46,7 +46,6 @@ const Carousel = <T,>({
 
   return (
     <div>
-
       <Swiper
         spaceBetween={spaceBetween}
         slidesPerView={slidesPerView}
@@ -55,7 +54,7 @@ const Carousel = <T,>({
         pagination={{ clickable: true }}
         navigation={true}
         effect={effect}
-        centeredSlides={true}
+        centeredSlides={centeredSlides}
         initialSlide={2}
         centerInsufficientSlides={true}
         grabCursor={true}
@@ -73,6 +72,9 @@ const Carousel = <T,>({
               slideShadows: true,
             }
             : undefined
+        }
+        className={
+          effect === "coverflow" ? "coverflow-carousel" : "regular-carousel"
         }
       >
         {data.map((item, index) => (
