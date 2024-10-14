@@ -18,7 +18,7 @@ const StudentReviewCarousel: React.FC = () => {
     } else if (width > 1390 && width <= 2355) {
       setSlidesPerView(3);
     } else {
-      setSlidesPerView(5); 
+      setSlidesPerView(5);
     }
   };
 
