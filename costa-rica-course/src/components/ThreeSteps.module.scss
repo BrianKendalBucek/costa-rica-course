@@ -12,6 +12,11 @@
   margin-top: 100px;
   color: white;
 
+  @media (max-width: 1200px) {
+    height: auto;
+    padding: 90px;
+  }
+
   .threeStepsTitle {
     display: flex;
     gap: 5px;
@@ -31,6 +36,10 @@
     display: flex;
     margin-top: 40px;
     gap: 60px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
 
     .threeStepsStep {
       display: flex;
