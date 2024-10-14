@@ -1,5 +1,5 @@
 import styles from "./Instructor.module.scss";
-import ResponsiveCarousel from "./ResponsiveCarousel";
+// import ResponsiveCarousel from "./ResponsiveCarousel";
 import InstructorIntroCarousel from "./InstructorIntroCarousel";
 
 export const Instructor = () => (
