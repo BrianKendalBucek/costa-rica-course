@@ -1,7 +1,7 @@
 .footer {
-  width: 100vw;
+  width: 100%;
   height: 746px;
-  background-image: url('/images/Rectangle 27 (1).png'); 
+  background-image: url("/images/Rectangle 27 (1).png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -11,10 +11,30 @@
   justify-content: center;
   align-items: center;
 
-  h1 {
-    color: white;
-    font-size: 46px;
-    font-weight: 400;
+  .headerDivison {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    @media (max-width: 690px) {
+      gap: 0;
+      flex-direction: column;
+    }
+
+    h1 {
+      color: white;
+      font-size: 46px;
+      font-weight: 400;
+
+      @media (max-width: 690px) {
+        font-size: 36px;
+        margin: 0;
+      }
+    }
+
+    .titleTwo {
+      font-weight: 500;
+    }
   }
 
   p {
@@ -23,7 +43,7 @@
   }
 
   button {
-    margin-top: 30px;
+    margin-top: 60px;
     padding: 10px 20px;
     border-radius: 25px;
     background-color: orange;
@@ -31,6 +51,6 @@
   }
 
   .copyright {
-    margin-top: 250px;
+    margin-top: 300px;
   }
 }
