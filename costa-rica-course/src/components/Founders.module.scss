@@ -1,15 +1,14 @@
 .foundersImagesAndData {
   display: flex;
   // box-sizing: border-box;
-
-  // SKINNY
-  // width: 378px;
-  // height: 207px;
-  // gap: 10px;
-
-  // WIDE
   width: 488px;
   height: 472px;
+
+  @media (max-width: 1100px) {
+    width: 378px;
+    height: 207px;
+    gap: 10px;
+  }
 
   .founderLeft {
     box-sizing: border-box;
@@ -25,14 +24,13 @@
       background-repeat: no-repeat;
       background-size: cover;
       box-sizing: border-box;
-
-      // SKINNY
-      // width: 183px;
-      // height: 167px;
-
-      // WIDE
       width: 244px;
       height: 236px;
+
+      @media (max-width: 1100px) {
+        width: 183px;
+        height: 167px;
+      }
 
       // border: 1px solid blue;
     }
@@ -44,14 +42,14 @@
       width: 100%;
       text-align: left;
 
-      // SKINNY
-      // height: 32px;
-      // text-align: left;
-
-      // WIDE
       padding: 10px;
       // justify-content: flex-end;
       // padding-bottom: 10px;
+      
+      @media (max-width: 1100px) {
+        height: 32px;
+        text-align: left;
+      }
 
       // border: 1px solid green;
 
@@ -75,12 +73,11 @@
     height: 100%;
     width: 50%;
     display: flex;
-
-    // SKINNY
-    // flex-direction: column;
-
-    // WIDE
     flex-direction: column-reverse;
+    
+    @media (max-width: 1100px) {
+      flex-direction: column;
+    }
 
     // border: 1px solid yellow;
 
@@ -89,14 +86,13 @@
       background-image: url("/images/dr-john-smith.png");
       background-repeat: no-repeat;
       background-size: cover;
-
-      // SKINNY
-      // width: 183px;
-      // height: 167px;
-
-      // WIDE
       width: 244px;
       height: 236px;
+      
+      @media (max-width: 1100px) {
+        width: 183px;
+        height: 167px;
+      }
 
       // border: 1px solid darkgreen;
     }
@@ -106,14 +102,13 @@
       display: flex;
       width: 100%;
       flex-direction: column;
-
-      // SKINNY
-      // height: 32px;
-      // text-align: left;
-
-      // WIDE
       text-align: right;
       padding: 10px;
+      
+      @media (max-width: 1100px) {
+        height: 32px;
+        text-align: left;
+      }
 
       // border: 1px solid black;
 
