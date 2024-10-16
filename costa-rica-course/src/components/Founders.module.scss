@@ -1,28 +1,65 @@
-.images {
-  width: 463px;
-  height: 478px;
+.foundersImagesAndData {
+  display: flex;
+  // box-sizing: border-box;
 
-  .imageTop {
-    height: 50%;
+  // SKINNY
+  // width: 378px;
+  // height: 207px;
+  // gap: 10px;
+
+  // WIDE
+  width: 488px;
+  height: 472px;
+
+  .founderLeft {
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
     display: flex;
+    flex-direction: column;
 
-    .imageTopLeft {
+    // border: 1px solid red;
+
+    .image {
       background-image: url("/images/lisa-green.png");
-      width: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-sizing: border-box;
+
+      // SKINNY
+      // width: 183px;
+      // height: 167px;
+
+      // WIDE
+      width: 244px;
+      height: 236px;
+
+      // border: 1px solid blue;
     }
 
-    .imageTopRight {
-      width: 50%;
-      text-align: right;
+    .data {
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      padding-bottom: 10px;
+      width: 100%;
+      text-align: left;
+
+      // SKINNY
+      // height: 32px;
+      // text-align: left;
+
+      // WIDE
+      padding: 10px;
+      // justify-content: flex-end;
+      // padding-bottom: 10px;
+
+      // border: 1px solid green;
 
       h4 {
         color: black;
         font-size: 14px;
         font-weight: 800;
+        margin: 0;
       }
 
       h5 {
@@ -33,17 +70,58 @@
     }
   }
 
-  .imageBottom {
-    height: 50%;
+  .founderRight {
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
     display: flex;
 
-    .imageBottomLeft {
-      width: 50%;
+    // SKINNY
+    // flex-direction: column;
+
+    // WIDE
+    flex-direction: column-reverse;
+
+    // border: 1px solid yellow;
+
+    .image {
+      box-sizing: border-box;
+      background-image: url("/images/dr-john-smith.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      // SKINNY
+      // width: 183px;
+      // height: 167px;
+
+      // WIDE
+      width: 244px;
+      height: 236px;
+
+      // border: 1px solid darkgreen;
+    }
+
+    .data {
+      box-sizing: border-box;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+
+      // SKINNY
+      // height: 32px;
+      // text-align: left;
+
+      // WIDE
+      text-align: right;
+      padding: 10px;
+
+      // border: 1px solid black;
 
       h4 {
         color: black;
         font-size: 14px;
         font-weight: 800;
+        margin: 0;
       }
 
       h5 {
@@ -51,11 +129,6 @@
         font-weight: 400;
         margin: 0;
       }
-    }
-
-    .imageBottomRight {
-      background-image: url("/images/dr-john-smith.png");
-      width: 50%;
     }
   }
 }
