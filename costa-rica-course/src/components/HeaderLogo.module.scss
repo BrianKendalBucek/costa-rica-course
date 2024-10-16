@@ -1,4 +1,11 @@
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+
+  @media screen and (max-width: 475px) {
+    img {
+      width: 150px; 
+      height: auto; 
+    }
+  }
 }

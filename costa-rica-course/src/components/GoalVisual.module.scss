@@ -10,12 +10,14 @@
 
   p {
     padding: 0 10px;
-    width: 400px;
+    max-width: 400px;
   }
 }
 
 .trio {
-  width: 100%;
+  // REVERT BACK
+  // width: 100%;
+  width: 80%;
   height: auto;
   display: flex;
   justify-content: center;
