@@ -15,7 +15,7 @@
 
   .mainCourseContainer {
     height: 396px;
-    width: 891px;
+    max-width: 891px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 60px;
     display: flex;
@@ -27,6 +27,7 @@
       height: auto;
       align-items: center;
       width: auto;
+      margin-top: 30px;
     }
 
     .mainCourseImage {
@@ -34,6 +35,11 @@
 
       img {
         border-radius: 4px;
+
+        @media (max-width: 400px) {
+          width: 300px;
+          height: auto;
+        }
       }
     }
 
@@ -45,7 +51,7 @@
       justify-content: space-between;
 
       @media (max-width: 1033px) {
-        width: 388px;
+        max-width: 388px;
         box-sizing: border-box;
         padding: 0 10px;
       }
@@ -70,7 +76,7 @@
 
       .priceAndButton {
         // width: 380px;
-        width: 400px;
+        max-width: 400px;
         padding-bottom: 15px;
         display: flex;
         flex-direction: column;

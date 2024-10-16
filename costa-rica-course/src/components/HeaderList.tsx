@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './HeaderList.module.scss';
 import Link from 'next/link';
 
-const HeaderList = () => {
+const HeaderList = ({ onItemClick }: { onItemClick: () => void }) => {
   // State to track if the screen width is less than 1380px
   const [isMobileView, setIsMobileView] = useState(false);
 
@@ -24,29 +24,29 @@ const HeaderList = () => {
     <div className={styles.navList}>
       <nav>
         <ul>
-          <li>
+          <li onClick={onItemClick}>
             <Link href="/">Home</Link>
           </li>
-          <li>
+          <li onClick={onItemClick}>
             <Link href="/about">About</Link>
           </li>
-          <li>
+          <li onClick={onItemClick}>
             <Link href="/courses">Courses</Link>
           </li>
-          <li>
+          <li onClick={onItemClick}>
             <Link href="/contact">Contact</Link>
           </li>
-          <li>
+          <li onClick={onItemClick}>
             <Link href="/account">Account</Link>
           </li>
-          <li>
+          <li onClick={onItemClick}>
             <Link href="/checkout">Checkout</Link>
           </li>
           {/* <li>
             <Link href="/test">Test</Link>
           </li> */}
           {isMobileView && (
-            <li>
+            <li onClick={onItemClick}>
               <Link href="/login">Login</Link>
             </li>
           )}
