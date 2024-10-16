@@ -37,18 +37,14 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <HeaderLogo />
 
-      {/* Hamburger Menu Icon */}
       <div className={styles.hamburgerIcon} onClick={toggleMenu}>
         <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} size="lg" />
       </div>
 
-      {/* Show/Hide the menu based on menuOpen state */}
-      {/* Toggle 'open' class based on menuOpen state */}
       <nav className={`${styles.navList} ${menuOpen ? styles.open : ""}`}>
         <HeaderList />
       </nav>
 
-      {/* Conditionally render the Login Button based on screen size */}
       {!isMobileView && <HeaderLoginButton />}
     </header>
   );
