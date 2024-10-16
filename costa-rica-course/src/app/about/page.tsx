@@ -26,8 +26,8 @@ const AboutPage = () => {
       <Stats />
       <div className={styles.instructorContainer}>
         <Instructor />
+        <Students />
       </div>
-      <Students />
     </div>
   );
 };
