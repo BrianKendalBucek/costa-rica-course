@@ -10,7 +10,8 @@
     }
 
     form {
-      width: 1022.5px;
+      max-width: 1022.5px;
+      width: 90%;
 
       .formGroup {
         display: flex;
