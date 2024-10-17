@@ -1,6 +1,11 @@
 .story {
   width: 463px;
-  height: 478px;
+  // height: 478px;
+  height: auto;
+
+  @media (max-width: 580px) {
+    width: 378px;
+  }
 
   h2 {
     margin-top: 0;
