@@ -8,7 +8,7 @@ import { Students } from "@/components/Students";
 const CoursesPage: React.FC = () => {
 
   return (
-    <main className={styles.coursesPage}>
+    <main>
       <Hero
         titleOne="MAIN"
         titleTwo="COURSE"
