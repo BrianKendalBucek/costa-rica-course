@@ -6,7 +6,9 @@
 
 .coursesCarousel {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   // width: 754.87px;
   // width: 50%;
   margin: 50px 0;

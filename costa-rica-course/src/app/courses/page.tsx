@@ -18,8 +18,8 @@ const CoursesPage: React.FC = () => {
       />
       <div className={styles.coursesCarousel}>
         <Courses />
+        <Students />
       </div>
-      <Students />
     </main>
   );
 };
