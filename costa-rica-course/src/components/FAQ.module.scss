@@ -1,6 +1,8 @@
 // Define common variables and mixins
 $primary-color: #025198;
+// $primary-color: blue;
 $secondary-color: #025198;
+// $secondary-color: blue;
 $font-family: 'Arial', sans-serif;
 
 @mixin transition-effect($property, $duration: 0.3s, $timing: ease-in-out) {
@@ -25,11 +27,10 @@ $font-family: 'Arial', sans-serif;
       border-bottom: 1px solid $secondary-color;
       padding: 10px;
       
-      // Expanded state for the FAQ item
-      &.expanded {
-        background: lighten($secondary-color, 45%);
-        // border-left: 4px solid $primary-color;
-      }
+      // &.expanded {
+      //   background: lighten($secondary-color, 45%);
+      //   // border-left: 4px solid $primary-color;
+      // }
       .faqQuestion {
         display: flex;
         justify-content: space-between;
