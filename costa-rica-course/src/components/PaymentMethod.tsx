@@ -1,47 +1,29 @@
 import styles from './PaymentMethod.module.scss';
+import { InputField } from './InputField';
+
+const PaymentOption = ({ id, label, children }) => {
+  return (
+    <div className={styles.paymentOption}>
+      <input type="radio" id={id} name="payment" />
+      <label htmlFor={id}>{label}</label>
+      {children}
+    </div>
+  );
+};
 
 const PaymentMethod = () => {
   return (
     <div className={styles.formSection}>
       <h3 className={styles.sectionTitle}>Payment Method</h3>
       <div className={styles.paymentOptions}>
-        <div className={styles.paymentOption}>
-          <input type="radio" id="paypal" name="payment" />
-          <label htmlFor="paypal">PayPal</label>
-        </div>
-        <div className={styles.paymentOption}>
-          <input type="radio" id="credit-card" name="payment" />
-          <label htmlFor="credit-card">Pay with Credit Card</label>
+        <PaymentOption id="paypal" label="PayPal" />
+        <PaymentOption id="credit-card" label="Pay with Credit Card">
           <div className={styles.creditCardForm}>
-            <div className={styles.inputContainer}>
-              <input
-                className={styles.input}
-                type="text"
-                id="cardNumber"
-                placeholder=" "
-              />
-              <label className={styles.label} htmlFor="cardNumber">Card number</label>
-            </div>
-            <div className={styles.inputContainer}>
-              <input
-                className={styles.input}
-                type="text"
-                id="expirationDate"
-                placeholder=" "
-              />
-              <label className={styles.label} htmlFor="expirationDate">Expiration Date (MM/YY)</label>
-            </div>
-            <div className={styles.inputContainer}>
-              <input
-                className={styles.input}
-                type="password"
-                id="cardSecurityCode"
-                placeholder=" "
-              />
-              <label className={styles.label} htmlFor="cardSecurityCode">Card Security Code</label>
-            </div>
+            <InputField id="cardNumber" type="text" label="Card number" />
+            <InputField id="expirationDate" type="text" label="Expiration Date (MM/YY)" />
+            <InputField id="cardSecurityCode" type="password" label="Card Security Code" />
           </div>
-        </div>
+        </PaymentOption>
       </div>
     </div>
   );

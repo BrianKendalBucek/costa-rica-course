@@ -19,55 +19,12 @@
       input {
         margin-right: 10px;
       }
-      
+
       .creditCardForm {
         margin-top: 25px;
         display: flex;
         flex-direction: column;
         gap: 10px;
-
-        .inputContainer {
-          position: relative;
-          width: 100%;
-        }
-
-        .input {
-          box-sizing: border-box;
-          padding: 12px 10px 10px; /* More space on top for the label */
-          border: 1px solid #ddd;
-          border-radius: 4px;
-          width: 100%;
-          margin-bottom: 10px;
-          outline: none;
-          font-size: 16px;
-        }
-
-        .input:focus {
-          border-color: #4caf50;
-        }
-
-        .label {
-          position: absolute;
-          top: -8px; /* Lift the label above the input */
-          left: 12px; /* Align label with padding */
-          background-color: white; /* Create the cutout effect */
-          padding: 0 4px; /* Padding around the label */
-          font-size: 14px;
-          color: #666;
-          pointer-events: none; /* Ensure the label doesn't interfere with the input */
-          transition: 0.2s ease all;
-        }
-
-        .input::placeholder {
-          color: transparent; /* Hide placeholder text */
-        }
-
-        .input:not(:placeholder-shown) + .label,
-        .input:focus + .label {
-          top: -8px; /* Keep the label above when there's input or focus */
-          font-size: 14px;
-          color: #333;
-        }
       }
     }
   }

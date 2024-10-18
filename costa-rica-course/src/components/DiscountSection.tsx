@@ -1,18 +1,11 @@
 import styles from "./DiscountSection.module.scss";
+import { InputField } from "./InputField"; // Adjust the path based on your project structure
 
 const DiscountSection = () => {
   return (
     <div className={styles.discountSection}>
       <h3 className={styles.sectionTitle}>Discount Codes</h3>
-      <div className={styles.inputContainer}>
-        <input
-          className={styles.input}
-          type="text"
-          id="couponCode"
-          placeholder=" "
-        />
-        <label className={styles.label} htmlFor="couponCode">Enter your coupon code</label>
-      </div>
+      <InputField id="couponCode" type="text" label="Enter your coupon code" />
     </div>
   );
 };

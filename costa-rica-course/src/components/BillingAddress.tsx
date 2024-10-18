@@ -1,4 +1,5 @@
 import styles from './BillingAddress.module.scss';
+import { InputField } from './InputField';
 
 const BillingAddress = () => {
   return (
@@ -6,82 +7,18 @@ const BillingAddress = () => {
       <h3 className={styles.sectionTitle}>Billing Address</h3>
       <form className={styles.form}>
         <div className={styles.inputRow}>
-          <div className={styles.inputContainer}>
-            <input
-              className={styles.input}
-              type="text"
-              id="firstName"
-              placeholder=" "
-            />
-            <label className={styles.label} htmlFor="firstName">First Name</label>
-          </div>
-          <div className={styles.inputContainer}>
-            <input
-              className={styles.input}
-              type="text"
-              id="lastName"
-              placeholder=" "
-            />
-            <label className={styles.label} htmlFor="lastName">Last Name</label>
-          </div>
+          <InputField id="firstName" type="text" label="First Name" />
+          <InputField id="lastName" type="text" label="Last Name" />
         </div>
-        <div className={styles.inputContainer}>
-          <input
-            className={styles.input}
-            type="email"
-            id="email"
-            placeholder=" "
-          />
-          <label className={styles.label} htmlFor="email">Email Address</label>
-        </div>
-        <div className={styles.inputContainer}>
-          <input
-            className={styles.input}
-            type="text"
-            id="streetAddress"
-            placeholder=" "
-          />
-          <label className={styles.label} htmlFor="streetAddress">Street Address</label>
+        <InputField id="email" type="email" label="Email Address" />
+        <InputField id="streetAddress" type="text" label="Street Address" />
+        <div className={styles.inputRow}>
+          <InputField id="stateProvince" type="text" label="State/Province" />
+          <InputField id="city" type="text" label="City" />
         </div>
         <div className={styles.inputRow}>
-          <div className={styles.inputContainer}>
-            <input
-              className={styles.input}
-              type="text"
-              id="stateProvince"
-              placeholder=" "
-            />
-            <label className={styles.label} htmlFor="stateProvince">State/Province</label>
-          </div>
-          <div className={styles.inputContainer}>
-            <input
-              className={styles.input}
-              type="text"
-              id="city"
-              placeholder=" "
-            />
-            <label className={styles.label} htmlFor="city">City</label>
-          </div>
-        </div>
-        <div className={styles.inputRow}>
-          <div className={styles.inputContainer}>
-            <input
-              className={styles.input}
-              type="text"
-              id="postalCode"
-              placeholder=" "
-            />
-            <label className={styles.label} htmlFor="postalCode">Zip/Postal Code</label>
-          </div>
-          <div className={styles.inputContainer}>
-            <input
-              className={styles.input}
-              type="text"
-              id="phone"
-              placeholder=" "
-            />
-            <label className={styles.label} htmlFor="phone">Phone</label>
-          </div>
+          <InputField id="postalCode" type="text" label="Zip/Postal Code" />
+          <InputField id="phone" type="text" label="Phone" />
         </div>
       </form>
     </div>
