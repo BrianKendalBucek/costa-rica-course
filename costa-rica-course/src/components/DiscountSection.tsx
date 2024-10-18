@@ -1,5 +1,5 @@
 import styles from "./DiscountSection.module.scss";
-import { InputField } from "./InputField"; // Adjust the path based on your project structure
+import { InputField } from "./InputField";
 
 const DiscountSection = () => {
   return (

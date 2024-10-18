@@ -1,7 +1,7 @@
 import styles from './PaymentMethod.module.scss';
 import { InputField } from './InputField';
 
-const PaymentOption = ({ id, label, children }) => {
+const PaymentOption = ({ id, label, children }: { id: string; label: string; children?: React.ReactNode }) => {
   return (
     <div className={styles.paymentOption}>
       <input type="radio" id={id} name="payment" />

@@ -1,10 +1,10 @@
-import styles from './BillingAddress.module.scss';
-import { InputField } from './InputField';
+import styles from "./BillingAddress.module.scss";
+import { InputField } from "./InputField";
 
 const BillingAddress = () => {
   return (
     <div className={styles.formSection}>
-      <h3 className={styles.sectionTitle}>Billing Address</h3>
+      <h3>Billing Address</h3>
       <form className={styles.form}>
         <div className={styles.inputRow}>
           <InputField id="firstName" type="text" label="First Name" />
