@@ -31,6 +31,10 @@
 
       h3 {
         margin: 0;
+
+        @media (max-width: 590px) {
+          font-size: 15px;
+        }
       }
     }
 
@@ -44,6 +48,10 @@
         padding: 8px 12px;
         border-radius: 16px;
         font-weight: bold;
+
+        @media (max-width: 590px) {
+          font-size: 15px;
+        }
       }
 
       .dropdownIcon {

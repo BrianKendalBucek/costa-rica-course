@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./CourseProgress.module.scss"; // Import the corresponding CSS/SCSS module
 
 // Define the types for the props if using TypeScript
@@ -16,11 +16,29 @@ interface CourseProgressProps {
 
 const CourseProgress: React.FC<CourseProgressProps> = ({ title, steps }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   // Calculate progress
   const totalSteps = steps.length;
   const completedSteps = steps.filter((step) => step.isComplete).length;
   const progressPercentage = Math.round((completedSteps / totalSteps) * 100);
+
+  // Handle screen width change
+  const handleResize = () => {
+    setIsSmallScreen(window.innerWidth < 500);
+  };
+
+  useEffect(() => {
+    // Check initial screen size
+    handleResize();
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -36,7 +54,10 @@ const CourseProgress: React.FC<CourseProgressProps> = ({ title, steps }) => {
           <h3>{title}</h3>
         </div>
         <div className={styles.statusContainer}>
-          <span className={styles.completeButton}>COMPLETE</span>
+          {/* Conditionally render COMPLETE button if screen width is >= 500px */}
+          {!isSmallScreen && (
+            <span className={styles.completeButton}>COMPLETE</span>
+          )}
           <span className={styles.dropdownIcon}>
             {isOpen ? "▲" : "▼"} {/* Arrow icon */}
           </span>
