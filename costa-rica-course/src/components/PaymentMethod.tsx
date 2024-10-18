@@ -13,21 +13,33 @@ const PaymentMethod = () => {
           <input type="radio" id="credit-card" name="payment" />
           <label htmlFor="credit-card">Pay with Credit Card</label>
           <div className={styles.creditCardForm}>
-            <input
-              className={styles.input}
-              type="text"
-              placeholder="Card number"
-            />
-            <input
-              className={styles.input}
-              type="text"
-              placeholder="Expiration Date (MM/YY)"
-            />
-            <input
-              className={styles.input}
-              type="password"
-              placeholder="Card Security Code"
-            />
+            <div className={styles.inputContainer}>
+              <input
+                className={styles.input}
+                type="text"
+                id="cardNumber"
+                placeholder=" "
+              />
+              <label className={styles.label} htmlFor="cardNumber">Card number</label>
+            </div>
+            <div className={styles.inputContainer}>
+              <input
+                className={styles.input}
+                type="text"
+                id="expirationDate"
+                placeholder=" "
+              />
+              <label className={styles.label} htmlFor="expirationDate">Expiration Date (MM/YY)</label>
+            </div>
+            <div className={styles.inputContainer}>
+              <input
+                className={styles.input}
+                type="password"
+                id="cardSecurityCode"
+                placeholder=" "
+              />
+              <label className={styles.label} htmlFor="cardSecurityCode">Card Security Code</label>
+            </div>
           </div>
         </div>
       </div>
