@@ -14,11 +14,13 @@
         flex-direction: column;
         gap: 40px;
         z-index: 5;
+        align-items: start;
       }
 
       li {
         a {
           color: black;
+          font-weight: 400;
           text-decoration: none;
           font-size: 18px;
           transition: color 0.2s ease-in-out;

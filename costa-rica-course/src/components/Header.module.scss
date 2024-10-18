@@ -18,23 +18,15 @@
       top: 70px;
       right: 0;
       background-color: white;
-      // width: 11%;
       text-align: center;
-      // flex-direction: column;
       padding: 20px 20px 40px 20px;
-      // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 0 0 4px 4px;
+      border-radius: 0 0 60px 4px;
       border: 2px solid grey; /* Apply border to all sides */
       border-top: none;
       border-right: none;
-      // transition: transform 0.3s ease, opacity 0.3s ease;
-      // transform: translateY(-100%);
-      // opacity: 0;
 
       &.open {
         display: flex;
-        // transform: translateY(0); /* Slide down */
-        // opacity: 1; /* Make menu visible */
       }
     }
   }
