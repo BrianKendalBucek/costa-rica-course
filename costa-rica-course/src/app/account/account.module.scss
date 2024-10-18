@@ -9,7 +9,9 @@
   .userModBlock {
     position: absolute;
     top: 280px;
-    left: 5%;
+    right: calc(50% + 600px);
+    // left: 5%;
+    // center-right:
     transform: translateX(-50%);
     z-index: 2;
   }
