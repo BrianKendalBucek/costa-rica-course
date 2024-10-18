@@ -4,7 +4,7 @@
   margin: 16px 0;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
+
   .courseHeader {
     display: flex;
     justify-content: space-between;
@@ -33,76 +33,78 @@
         margin: 0;
       }
     }
+
+    .statusContainer {
+      display: flex;
+      align-items: center;
+
+      .completeButton {
+        background-color: #4caf50;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 16px;
+        font-weight: bold;
+      }
+
+      .dropdownIcon {
+        font-size: 16px;
+        color: #333;
+        margin-left: 10px;
+      }
+    }
   }
-}
 
+  .dropdownContent {
+    padding: 16px;
+    background-color: #f9f9f9;
 
+    .progressBarContainer {
+      margin-bottom: 16px;
 
+      .progressBarInfo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
-.completeButton {
-  background-color: #4caf50;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 16px;
-  font-weight: bold;
-}
+      .progressBar {
+        width: 100%;
+        height: 12px;
+        background-color: #e0e0e0;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-top: 8px;
 
-.dropdownIcon {
-  font-size: 16px;
-  color: #333;
-  margin-left: 10px;
-}
+        .progress {
+          height: 100%;
+          background-color: #4caf50;
+          border-radius: 6px;
+        }
+      }
 
-.dropdownContent {
-  padding: 16px;
-  background-color: #f9f9f9;
-}
+      .progressInfo {
+        font-weight: bold;
+      }
+    }
 
-.progressBarContainer {
-  margin-bottom: 16px;
-}
+    .stepsList {
+      list-style-type: none;
+      padding: 0;
 
-.progressBarInfo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+      .stepItem {
+        padding: 8px 0;
+        border-bottom: 1px solid #e1e1e1;
+        display: flex;
+        align-items: center;
 
-.progressBar {
-  width: 100%;
-  height: 12px;
-  background-color: #e0e0e0;
-  border-radius: 6px;
-  overflow: hidden;
-  margin-top: 8px;
-}
+        .checkIcon {
+          margin-right: 8px;
+        }
 
-.progress {
-  height: 100%;
-  background-color: #4caf50;
-  border-radius: 6px;
-}
-
-.progressInfo {
-  font-weight: bold;
-}
-
-.stepsList {
-  list-style-type: none;
-  padding: 0;
-}
-
-.stepItem {
-  padding: 8px 0;
-  border-bottom: 1px solid #e1e1e1;
-  display: flex;
-  align-items: center;
-}
-
-.completedStep {
-  color: #4caf50;
-}
-
-.checkIcon {
-  margin-right: 8px;
+        &.completedStep {
+          color: #4caf50;
+        }
+      }
+    }
+  }
 }
